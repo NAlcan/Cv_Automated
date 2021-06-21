@@ -23,14 +23,16 @@ library(tidyverse)
   + Bioestadística
   + Ciencias Ambientales
   + Estadística para el control de Procesos
+  + Farmacoepidemiología
 
 # Formacion
 ## Educación
 ```{r}
 tribble(
   ~ Titulo, ~ Año, ~ Institución, ~ Lugar, ~ Tesis, 
-  "Licenciatura en Cs. Biológicas (opc. Ecología)", "2009 - 2015", "Facultad de Ciencias, Universidad de la República", "Montevideo, Uruguay", "Efectos de la variabilidad ambiental sobre, presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa",
-  "Mágister en Geociencias", "2015 - 2019", "PEDECIBA (MEC - UdealR)", "Montevideo, Uruguay","Niveles de riesgo de exposición a floraciones de Cianobacterias en el río Uruguay; forzantes ambientales y modelos de predicción") %>% 
+  "Doctorado en Producción animal", "2021 (en marcha)", "Facultad de Veterinaria, Universidad de la República", "Montevideo, Uruguay", "Farmacoeconomía y farmaecoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios de Uruguay",
+    "Mágister en Geociencias", "2015 - 2019", "PEDECIBA (MEC - UdealR)", "Montevideo, Uruguay","Niveles de riesgo de exposición a floraciones de Cianobacterias en el río Uruguay; forzantes ambientales y modelos de predicción",
+  "Licenciatura en Cs. Biológicas (opc. Ecología)", "2009 - 2015", "Facultad de Ciencias, Universidad de la República", "Montevideo, Uruguay", "Efectos de la variabilidad ambiental sobre, presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa") %>% 
   detailed_entries( Titulo, Año, Institución, Lugar, glue::glue("Título de tesis: {Tesis}"))
 ```
 
@@ -38,8 +40,7 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Research Writing in the Sciences", "2021 (en curso)", "INASP - Moodle","https://moodle.inasp.info", "Escritura Cientifica | Ética en investigación | Publicaciones",
-  "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
+    "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
   "The CODATA-RDA Research Data Science Summer School", "2020","Robert Quick (Indiana University, USA), Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de los datos", 
   "Estadística de Datos Extremos", "2019", "Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","Distribuciones Extremales | POT",
  "The CODATA-RDA Research Data Science", "2018", "Marcela Alfaro Córdoba (University of Costa Rica), Robert E Quick (Indiana University, USA)", "ICTP- SAIFR - San Pablo, Brasil", "Ciencia de datos | Software Libre | Estadística y visualización | reproducibilidad de datos",
@@ -64,6 +65,7 @@ monitoreo y análisis", "2017","Dra Beatriz Brena", "Facultad de Quimica, UdelaR
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
+  "Research Writing in the Sciences", "2021", "International Network for Advancing Science and Policy (Edición Virtual)", "AthorAID , Inglaterra", "Escritura Científica | Ética en investigación | Publicaciones",
   "Pharmacometrics Spring School: Modeling Using MonolixSuite virtual course","2021","Dr Géraldine Ayral, Dr Pauline Traynard, Dr Monika Twarogowska, Dr Claude Magnard", "Lixoft (Simulations Plus)", "Farmacometria | Modelado Poblacional | Ensayos Clínicos",
   "Análisis estadístico espacial en R", "2019","Dr. Paul Harris, Department of Sustainable Soils & Grassland Systems ‐ Rothamsted Research (North Wyke) | Dr. Alexis Comber, Professor and Chair of Spacial Data Analytics, Centre of Spacial Analysis and Policy (CSAP), University of Leeds, Reino Unido","Facultad de Agronomia, UdelaR - Montevideo, Uruguay","Objetos espaciales | Visualización | Regresión",
   "Scientific Writing and Publishing Workshop", "2018","Dra. Claudia Etchebehere y MSc. María José Gonzalez" ,"Sociedad Uruguaya de Microbiología (SUM) y American Society of Microbiology (ASM) - Montevideo, Uruguay", "Escritura Cientifica | Comunicación", 
@@ -249,8 +251,8 @@ tribble(
 ```{r}
 tribble(
   ~ cargo, ~ year, ~ contexto,
-"Ayudante de investigación proyecto: “Analisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de cianobacterias en el Río Uruguay y costa de
-Montevideo”", "4/2018 - 12/2019", "Fondo sectorial de investigación a partir de datos abiertos (FSDA_1_2017_1_144351). Responsables: Dra. Carla Kruk, Dra. Beatriz Yannicelli. CURE - UdelaR",
+  "Profesor Ayudante proyecto: Herramientas matemáticas para la formación en el área biológica y biomédica", "2/2021 - 5/2021","Programa: Curso propedéutico de apoyo al  ingreso 2021. Comisión Sectorial de Enseñanza, UdelaR",
+"Ayudante de investigación proyecto: “Analisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de cianobacterias en el Río Uruguay y costa de Montevideo”", "4/2018 - 12/2019", "Fondo sectorial de investigación a partir de datos abiertos (FSDA_1_2017_1_144351). Responsables: Dra. Carla Kruk, Dra. Beatriz Yannicelli. CURE - UdelaR",
 "Pasante de Investigación, Departamento de Microbiología, Instituto de investigaciones Biológicas Clemente Estable", "6/2018 - 12/2018", "Equivalente Grado 1 (20 hrs semanales). Acceso por concurso de méritos",
 "Becario de Maestría (ANII- Postgrado Nacionales 2015): “Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas”", "5/2016 - 5/2018", "Orientadora: Dra. Kruk C. Co-Orientadoras: Dra. Piccini C., Dra. Renom M. Facultad de Ciencias, UdelaR. Departamento de Microbiología, IIBCE",
 "Pasante de Investigación, Departamento de Microbiología, Instituto de investigaciones Biológicas Clemente Estable", "6/2016 - 12/2016", "Equivalente Grado 1 (20 hrs semanales). Acceso por concurso de méritos",
@@ -280,13 +282,14 @@ tribble(
 ## Actividades de extensión y difusión
 
   - Miembro organizador de Taller de trabajo interinstitucional perteneciente al proyecto “Análisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de Cianobacterias en el Río Uruguay y costa de Montevideo” financiado por el Fondo sectorial de investigación a partir de datos (2017) - Agencia Nacional de Innovación e Investigación de Uruguay y del cual (FSDA1/20171144351). 6/5/2019
+  - "Qué estudian los que estudian: Cianobacterias y Alertas tempranas", Programa Justicia Infinita radio Océano. 6/8/2018
+  - Ciclo “Ciencia y Arte”, Programa Transformaciones, Radio Sarandí.
+Charla divulgación sobre el tema “Noctilucas” vinculado con la Canción de Jorge Drexler. Ciclo organizado en conjunto con la producción del Programa y los Investigadores del Laboratorio de Etología, Ecología y Evolución: Dra. Anita Aisenberg, Msc. Rodrigo Postiglioni. Marzo 2017
+- Participación en las XVII Jornadas de Puertas Abiertas del Instituto de Investigaciones Biológicas Clemente Estable (IIBCE). 1/10/2016.
+  - Charla abierta sobre “Ecosistemas de agua dulce”. Dirigida a los alumnos de 4°, 5° y 6° del Liceo Nº 1 de Santa Lucía. A.N.E.P. En el marco del día mundial del Medio Ambiente. 5/6/2015.
   - Participación en las jornadas de puertas abiertas realizada en la Facultad de Ciencias Mayo de 2014 y Mayo 2015. La jornadas de puertas abiertas se realizaron en el marco de la 9° y 10°Semana de la Ciencia y la Tecnología.
 Durante las jornadas colaboré recibiendo escuelas y liceos en el stand de la Sección Limnología. 
   - Presentación “ Efectos de la variabilidad ambiental sobre floraciones del complejo Microcystis aeruginosa”. En ciclos de Seminarios 2014, del Laboratorio de Etología, Ecología y Evolución del IIBCE.
-  - Ciclo “Ciencia y Arte”, Programa Transformaciones, Radio Sarandí.
-Charla divulgación sobre el tema “Noctilucas” vinculado con la Canción de Jorge Drexler. Ciclo organizado en conjunto con la producción del Programa y los Investigadores del Laboratorio de Etología, Ecología y Evolución: Dra. Anita Aisenberg, Msc. Rodrigo Postiglioni. Marzo 2017
-  - Charla abierta sobre “Ecosistemas de agua dulce”. Dirigida a los alumnos de 4°, 5° y 6° del Liceo Nº 1 de Santa Lucía. A.N.E.P. En el marco del día mundial del Medio Ambiente. 5/6/2015.
-  - Participación en las XVII Jornadas de Puertas Abiertas del Instituto de Investigaciones Biológicas Clemente Estable (IIBCE). 1/10/2016.
 
 ## Otros Antecedentes laborales	
 
