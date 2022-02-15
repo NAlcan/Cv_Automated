@@ -81,7 +81,7 @@ tribble(
 ```{r}
 tribble(
   ~ Programa, ~ Año, ~ Institucion, ~ Trabajo, 
-  "ecas de apoyo a docentes para estudios de posgrado en la Udelar, Doctorado, 2022", "2022 - 2025", "Comisión Academica de Posgrado (CAP), Universidad de la República","Farmacoeconomía y Farmacoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios en el Uruguay",
+  "Becas de apoyo a docentes para estudios de posgrado en la Udelar, Doctorado, 2022", "2022 - 2025", "Comisión Academica de Posgrado (CAP), Universidad de la República","Farmacoeconomía y Farmacoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios en el Uruguay",
 "Becas de Maestría - Posgrados Nacionales",  "05/2016-05/2018", "Agencia Nacional de Investigación e Innovación (ANII)", "Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas",
  "Escuela de Invierno Doctorados UC - área Ecología (Beca completa)", "8/2016" , "Pontificia Universidad Católica de Chile y PMI MECESUP PUC1203 (Santiago de Chile)", "Taller de Ecología del Cambio Global",
  "Beca de iniciación en investigación", "08/2014-08/2015", "Agencia Nacional de Investigación e Innovación (ANII)", "Efectos de la variabilidad ambiental y climática en las floraciones nocivas de cianobacterias en el Río Uruguay y Río de la Plata",
