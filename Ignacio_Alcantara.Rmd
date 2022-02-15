@@ -65,7 +65,8 @@ monitoreo y análisis", "2017","Dra Beatriz Brena", "Facultad de Quimica, UdelaR
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Research Writing in the Sciences", "2021", "International Network for Advancing Science and Policy (Edición Virtual)", "AthorAID , Inglaterra", "Escritura Científica | Ética en investigación | Publicaciones",
+  "Open Data Steward Instructor Training","2021", "FAIRsFAIR programme", " FAIR data Forum. Comisión Europea (edición virtual)", "Gobernanza de Datos | Datos Abiertos | Seguridad de la Información | Pegagogia",
+  "Research Writing in the Sciences", "2021", "International Network for Advancing Science and Policy (edición virtual)", "AthorAID , Inglaterra", "Escritura Científica | Ética en investigación | Publicaciones",
   "Pharmacometrics Spring School: Modeling Using MonolixSuite virtual course","2021","Dr Géraldine Ayral, Dr Pauline Traynard, Dr Monika Twarogowska, Dr Claude Magnard", "Lixoft (Simulations Plus)", "Farmacometria | Modelado Poblacional | Ensayos Clínicos",
   "Análisis estadístico espacial en R", "2019","Dr. Paul Harris, Department of Sustainable Soils & Grassland Systems ‐ Rothamsted Research (North Wyke) | Dr. Alexis Comber, Professor and Chair of Spacial Data Analytics, Centre of Spacial Analysis and Policy (CSAP), University of Leeds, Reino Unido","Facultad de Agronomia, UdelaR - Montevideo, Uruguay","Objetos espaciales | Visualización | Regresión",
   "Scientific Writing and Publishing Workshop", "2018","Dra. Claudia Etchebehere y MSc. María José Gonzalez" ,"Sociedad Uruguaya de Microbiología (SUM) y American Society of Microbiology (ASM) - Montevideo, Uruguay", "Escritura Cientifica | Comunicación", 
@@ -80,7 +81,8 @@ tribble(
 ```{r}
 tribble(
   ~ Programa, ~ Año, ~ Institucion, ~ Trabajo, 
-  "Becas de Maestría - Posgrados Nacionales",  "05/2016-05/2018", "Agencia Nacional de Investigación e Innovación (ANII)", "Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas",
+  "ecas de apoyo a docentes para estudios de posgrado en la Udelar, Doctorado, 2022", "2022 - 2025", "Comisión Academica de Posgrado (CAP), Universidad de la República","Farmacoeconomía y Farmacoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios en el Uruguay",
+"Becas de Maestría - Posgrados Nacionales",  "05/2016-05/2018", "Agencia Nacional de Investigación e Innovación (ANII)", "Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas",
  "Escuela de Invierno Doctorados UC - área Ecología (Beca completa)", "8/2016" , "Pontificia Universidad Católica de Chile y PMI MECESUP PUC1203 (Santiago de Chile)", "Taller de Ecología del Cambio Global",
  "Beca de iniciación en investigación", "08/2014-08/2015", "Agencia Nacional de Investigación e Innovación (ANII)", "Efectos de la variabilidad ambiental y climática en las floraciones nocivas de cianobacterias en el Río Uruguay y Río de la Plata",
  "Pasantía de iniciación en investigación", "6/2014 - 10/2014", "PEDECIBA Geociencias",  "Efectos de la variabilidad ambiental sobre la presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa",
@@ -108,7 +110,7 @@ tribble(
 ```{r}
 tribble(
   ~ Cargo, ~ Fecha, ~ Lugar,~ Desc, 
-  "Ayudante Docente" ,"1/2017 - Actual", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Grado 1 (efectivo, 20 hrs Semanales). Acceso por concurso de oposición y méritos",
+  "Ayudante Docente" ,"1/2017 - Actual", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Grado 1 (efectivo, 30 hrs Semanales). Acceso por concurso de oposición y méritos",
 ) %>% 
   detailed_entries(what = Cargo, when = Fecha,  with = Lugar, where = Desc)
 ```
@@ -131,7 +133,8 @@ tribble(
 
 ```{r}
 tribble(
-  ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
+  ~ Curso, ~ Fecha, ~ Carrera, ~ Rol,
+  "R1 - Análisis de datos en R", "2022", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
   "Introducción al Análisis de datos en R", "2020", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
   "Ecología funcional del fitoplancton","5/2018", "Porgrama de posgrado PEDECIBA Geociencias", "Docente asistente de teorico y dictado de clases prácticas. Responsable: Dra. Carla Kruk") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
@@ -177,6 +180,7 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
+  "A reply to `Relevant factors in the eutrophication of the Uruguay River and the Río Negro`", "Alcántara I., Somma A., Chalar G., Fabre A.,[...], García-Rodriguez F.","2021","Science of Total Environment","10.1016/j.scitotenv.2021.151854",
   "Improved biovolume estimation of Microcystis aeruginosa colonies: A statistical approach", "Alcántara I., Piccini C., Segura A. M., Deus S., González C., de la Escalera G. M., & Kruk, C","2018","Journal of microbiological methods"," https://doi.org/10.1016/j.mimet.2018.05.021") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
 ```
  
