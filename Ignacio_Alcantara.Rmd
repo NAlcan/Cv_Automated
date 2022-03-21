@@ -5,7 +5,7 @@ position: "Docente Ayudante"
 address: "Ud. Bioestadística, Facultad de Veterinaria, Universidad de la República"
 email: "nalcann@gmail.com"
 github: NAlcan
-linkedin: ignacio-alcántara
+linkedin: "www.linkedin.com/in/ialcantara16"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 ---
@@ -21,9 +21,9 @@ library(tidyverse)
 
   + Ciencia de Datos 
   + Bioestadística
+  + Farmacoepidemiología
   + Ciencias Ambientales
   + Estadística para el control de Procesos
-  + Farmacoepidemiología
 
 # Formacion
 ## Educación
@@ -32,7 +32,7 @@ tribble(
   ~ Titulo, ~ Año, ~ Institución, ~ Lugar, ~ Tesis, 
   "Doctorado en Producción animal", "2021 (en marcha)", "Facultad de Veterinaria, Universidad de la República", "Montevideo, Uruguay", "Farmacoeconomía y farmaecoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios de Uruguay",
     "Mágister en Geociencias", "2015 - 2019", "PEDECIBA (MEC - UdealR)", "Montevideo, Uruguay","Niveles de riesgo de exposición a floraciones de Cianobacterias en el río Uruguay; forzantes ambientales y modelos de predicción",
-  "Licenciatura en Cs. Biológicas (opc. Ecología)", "2009 - 2015", "Facultad de Ciencias, Universidad de la República", "Montevideo, Uruguay", "Efectos de la variabilidad ambiental sobre, presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa") %>% 
+  "Licenciatura en Ciencias Biológicas (opc. Ecología)", "2009 - 2015", "Facultad de Ciencias, Universidad de la República", "Montevideo, Uruguay", "Efectos de la variabilidad ambiental sobre, presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa") %>% 
   detailed_entries( Titulo, Año, Institución, Lugar, glue::glue("Título de tesis: {Tesis}"))
 ```
 
@@ -110,7 +110,8 @@ tribble(
 ```{r}
 tribble(
   ~ Cargo, ~ Fecha, ~ Lugar,~ Desc, 
-  "Ayudante Docente" ,"1/2017 - Actual", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Grado 1 (efectivo, 30 hrs Semanales). Acceso por concurso de oposición y méritos",
+  "Ayudante Docente" ,"1/2017 - Actual", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Grado 1 (efectivo, 20 hrs Semanales). Acceso por concurso de oposición y méritos",
+  "Ayudante Docente" ,"1/01/2022 - 31/12/2022", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Extension Horaria (20 - 30 hrs). Partida Área Tecnológica, fondos centrales"
 ) %>% 
   detailed_entries(what = Cargo, when = Fecha,  with = Lugar, where = Desc)
 ```
@@ -180,7 +181,7 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
-  "A reply to `Relevant factors in the eutrophication of the Uruguay River and the Río Negro`", "Alcántara I., Somma A., Chalar G., Fabre A.,[...], García-Rodriguez F.","2021","Science of Total Environment","10.1016/j.scitotenv.2021.151854",
+  "A reply to `Relevant factors in the eutrophication of the Uruguay River and the Río Negro`", "Alcántara I., Somma A., Chalar G., Fabre A.,[...], García-Rodriguez F.","2022","Science of Total Environment","10.1016/j.scitotenv.2021.151854",
   "Improved biovolume estimation of Microcystis aeruginosa colonies: A statistical approach", "Alcántara I., Piccini C., Segura A. M., Deus S., González C., de la Escalera G. M., & Kruk, C","2018","Journal of microbiological methods"," https://doi.org/10.1016/j.mimet.2018.05.021") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
 ```
  
