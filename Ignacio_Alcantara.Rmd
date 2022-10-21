@@ -190,8 +190,9 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
-"Benefits of Silvopastoral Systems for Keeping Beef Cattle", " Huertas, S.M, Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
-"El Índice de Actividad Individual de los estudiantes en EVA y sus rendimientos académicos: el caso de Bioestadística Veterinaria", "Bobadilla P., Alcántara I., Rosenstock N., Borlido C., Cabral P., Huertas S., Passarini J", "2020", "Inter-Cambios. Dilemas y Transiciones de la Educación Superior","https://doi.org/10.29156/INTER.7.2.15",
+  "Caenorhabditis elegans as a valuable model for the study of anthelmintic pharmacodynamics and drug-drug interactions: The case of ivermectin and eprinomectin", "Suárez, G., Alcántara I., Salinas G.","2022","Front. Pharmacol.","2022",
+"Benefits of Silvopastoral Systems for Keeping Beef Cattle", "Huertas, S.M, Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F.", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
+"El Índice de Actividad Individual de los estudiantes en EVA y sus rendimientos académicos: el caso de Bioestadística Veterinaria", "Bobadilla P., Alcántara I., Rosenstock N., Borlido C., Cabral P., Huertas S., Passarini J.", "2020", "Inter-Cambios. Dilemas y Transiciones de la Educación Superior","https://doi.org/10.29156/INTER.7.2.15",
 "Floración excepcional de Cianobacterias tóxicas en la costa de Uruguay, verano 2019", "Kruk C., Martínez A., Martínez de la Escalera G., Trinchin R., Manta G., Segura A. M., Piccini C., Brena B., Fabiano G., Pírez M., Gabito L., Alcántara I., Yannicelli B", "2019", "Innotec", "https://doi.org/10.26461/18.06",
 "Variabilidad y tendencia de la temperatura superficial de los grandes embalses del Río Negro", "Manta G., & Alcántara I","2018","Innotec", "https://doi.org/10.26461/16.07",
 "A multilevel trait-based approach to the ecological performance of Microcystis aeruginosa complex from headwaters to the ocean","Kruk C., Segura A. M., Nogueira L., Alcántara I., Calliari D., Martínez de la Escalera G., Carballo C., Cabrera C., Sarthou F., Scavone P., Piccini, C.","2017","Harmful Algae", "https://doi.org/10.1016/j.hal.2017.10.004",
