@@ -66,6 +66,7 @@ monitoreo y análisis", "2017","Dra Beatriz Brena", "Facultad de Quimica, UdelaR
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
+  "Taller Internacional de Formación Docente: Usos de tecnologías en la educación veterinaria", "2021", "Coordinadores: M. V Indiana Rodriguez y Dr. José Passarini", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo (virtual)","TICs | Educación Veterinaria | Formación Docente", 
   "Open Data Steward Instructor Training","2021", "FAIRsFAIR programme", " FAIR data Forum. Comisión Europea (edición virtual)", "Gobernanza de Datos | Datos Abiertos | Seguridad de la Información | Pegagogia",
   "Research Writing in the Sciences", "2021", "International Network for Advancing Science and Policy (edición virtual)", "AthorAID , Inglaterra", "Escritura Científica | Ética en investigación | Publicaciones",
   "Pharmacometrics Spring School: Modeling Using MonolixSuite virtual course","2021","Dr Géraldine Ayral, Dr Pauline Traynard, Dr Monika Twarogowska, Dr Claude Magnard", "Lixoft (Simulations Plus)", "Farmacometria | Modelado Poblacional | Ensayos Clínicos",
@@ -147,6 +148,8 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
+  "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", "Charlas:
+        \" Elaboración de cuestionarios para Moodle usando el software R\". Rosenstock N., Alcántara I., Bobadilla P. | \"Indicadores basados en registros de Moodle para el seguimiento de la actividad estudiantil\". Bobadilla P., Alcántara I., Rosenstock N.",
   "Taller: Ecología en el patio de la escuela", "2015","Liceo N°1 de Santa Lucía. A.N.E.P (3 hrs)", "Armado y dictado del taller para los grupos 1 y 2 de 5to biológico. Co Responsable junto con MSc. Emanuel Machín") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
 ```
@@ -231,6 +234,9 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ jornadas, ~ modalidad,
+  "Development of drug-drug interaction models in vitro for macrocyclic lactones and their understanding","Gonzalo Suárez, Ignacio Alcántara, Gustavo Salinas", "2022","RedIF Congress 2022; Ibero-American network in pharmacometrics", "Póster",
+  "¿La estrategia de control garrapaticida en bovinos afectaría la presencia parasitaria si se inicia con Fluazuron o Ivermectina como primer tratamiento generacional?","Suárez G., Robaina D., Alcántara I., Arambillete D","2022", "I Congreso de Producción Animal de Colombia \"COPACO-2022\" ", "Presentación oral",
+  "Is Combination of Ivermectin plus Eprinomectin really a benefit?", "Suárez G., Alcántara I., Salinas G.","2021" ,"Conference of the World Association for the Advancement of Veterinary Parasitology (28th edition)", "Póster",
 "Distribución de genotipos tóxicos de microcystis spp. en el sistema río uruguay – río de la plata", "Piccini C., Martínez de la Escalera G., Segura A., Alcántara I., Kruk C", "5/2015", "Congreso de Ficología Argentina", "Presentación oral",
 "Predicciones de floraciones de cianobacterias con bosques aleatorios: ríos, estuarios, y computadores", "Segura A., Calliari D., Alcántara I., Piccini C., y Kruk C.", "12/2014", "II Jornadas de Estadística Aplicada, LPE-MAREN", "Presentación Oral",
 "Herramientas para el monitoreo y predicción de floraciones de fitoplancton nocivo", "Kruk C., Segura A., Calliari D., Nogueira L., Martínez de la Escalera G. Miguez D., Carballo C., Alcántara I., Simoens M., Keel K., Cea J., Cabrera C., Piccini C.", "12/2014", " II Jornadas Interdisciplinarias en Biodiversidad y Ecología", "Presentación oral",
