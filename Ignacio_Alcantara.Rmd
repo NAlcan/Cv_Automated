@@ -25,8 +25,8 @@ library(tidyverse)
   + Ciencias Ambientales
   + Estadística para el control de Procesos
 
-# Formacion
-## Educación
+# Estudios
+## Títulos
 ```{r}
 tribble(
   ~ Titulo, ~ Año, ~ Institución, ~ Lugar, ~ Tesis, 
@@ -40,6 +40,7 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
+  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University)", "Facultad de Odontología", "GLM | Epidemiología| Lenguaje R",
     "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
   "The CODATA-RDA Research Data Science Summer School", "2020","Robert Quick (Indiana University, USA), Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de los datos", 
   "Estadística de Datos Extremos", "2019", "Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","Distribuciones Extremales | POT",
@@ -116,26 +117,25 @@ tribble(
   detailed_entries(what = Cargo, when = Fecha,  with = Lugar, where = Desc)
 ```
 
-## Otras actividades de enseñanza
-
-### Grado
+## Enseñanza curricular
+### Actividades de enseñanza de Grado
 
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Bioestadística I (Area I, semestre impar)","2017 - Actualidad", "Doctor en ciencias Veterinarias (plan 1998). Facultad de Veterinaria, Udelar", "Planificación del curso, dictado de grupos prácticos, dictado de clases teóricas, confección y corrección de parciales, exámenes",
-  "Talleres de apoyo paralelo al Curso de Bioestadística I", "2017 - 2018", "Plan de Desarrollo Estratégico - Facultad de Veterinaria, UdelaR","Planificación del taller, dictado de clases de apoyo en y Seguimiento de los estudiantes seleccionados en el curso de Bioestadística I",
+  "Bioestadística I (Area I, semestre impar)","2017 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, Udelar", "Planificación del curso, dictado de grupos prácticos, dictado de clases teóricas, confección y corrección de parciales, exámenes",
+  "Talleres de apoyo paralelo al Curso de Bioestadística I", "2017 - 2020", "Plan de Desarrollo Estratégico - Facultad de Veterinaria, UdelaR","Planificación del taller, dictado de clases de apoyo en y Seguimiento de los estudiantes seleccionados en el curso de Bioestadística I",
   "Biología, Medicina y preservación de Mamíferos Marinos en Uruguay", "4/2018", "Educación Permanente FVet – Dirección Nacional de Recurso Acuáticos", "Docente invitado. Dictado de dos clases teóricas y una actividad práctica en estación experimental DINARA- Cabo Polonio, Rocha. Responsable: Dr. Martin Lima",
   "Seminarios de Introducción a la Biología II. Semin. 902 (semestra par)", "2015","Lic. en Ciencias Biológicas y Bioquímica. Facultad de Ciencias, UdelaR", "Planificación del taller. Dictado de clases teóricas y prácticas. Salida de campo. Evaluación de los estudiantes. Confección de preguntas de examen") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
 ```
 
-### Posgrado
+###  Actividades de enseñanza de Posgrado
 
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol,
-  "R1 - Análisis de datos en R", "2022", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
+  "R1 - Análisis de datos en R", "ed. 2021 y 2022", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
   "Introducción al Análisis de datos en R", "2020", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
   "Ecología funcional del fitoplancton","5/2018", "Porgrama de posgrado PEDECIBA Geociencias", "Docente asistente de teorico y dictado de clases prácticas. Responsable: Dra. Carla Kruk") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
@@ -158,7 +158,8 @@ tribble(
 ```{r}
 tribble(
   ~ Titulo, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bach. Henry Aguiar y Bach. Miguel Panza)", "8/2019 - 11/2020", "Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
+  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bres. Diego Gérez y María Fernanda Paiva)", "3/2022 - 11/2022"," Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
+  "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bres. Henry Aguiar y Bach. Miguel Panza)", "8/2019 - 11/2020", "Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
  "Consumo de pescado en comunidades de pescadores artesanales del tramo bajo del Río Uruguay (Bach. Marcela Paíno)", "11/2017 - 9/2018","Tesis de grado Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Cristina Friss De Kereki, Co-Orientadores: Msc. Ignacio Alcántara, Lic. Miguel Angel Bellagamba. Rol: Asesoramiento en análisis estadístico") %>% 
   detailed_entries(what = Titulo, when = Fecha,  where = Rol, with = Carrera)
 ```
@@ -172,9 +173,9 @@ tribble(
   detailed_entries(what = Titulo, when = Fecha,  where = Rol, with = Carrera)
 ```
 
-# Creación de conocimientos y otros aportes originales
+# Creación de conocimientos
 
-## Artículos académicos en revistas arbitradas
+## Artículos académicos publicados en revistas arbitradas
 
 ### Primer autor
  
@@ -190,7 +191,7 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
-  "Caenorhabditis elegans as a valuable model for the study of anthelmintic pharmacodynamics and drug-drug interactions: The case of ivermectin and eprinomectin", "Suárez, G., Alcántara I., Salinas G.","2022","Front. Pharmacol.","2022",
+  "Caenorhabditis elegans as a valuable model for the study of anthelmintic pharmacodynamics and drug-drug interactions: The case of ivermectin and eprinomectin", "Suárez, G., Alcántara I., Salinas G.","2022","Front. Pharmacol.","10.3389/fphar.2022.984905",
 "Benefits of Silvopastoral Systems for Keeping Beef Cattle", "Huertas, S.M, Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F.", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
 "El Índice de Actividad Individual de los estudiantes en EVA y sus rendimientos académicos: el caso de Bioestadística Veterinaria", "Bobadilla P., Alcántara I., Rosenstock N., Borlido C., Cabral P., Huertas S., Passarini J.", "2020", "Inter-Cambios. Dilemas y Transiciones de la Educación Superior","https://doi.org/10.29156/INTER.7.2.15",
 "Floración excepcional de Cianobacterias tóxicas en la costa de Uruguay, verano 2019", "Kruk C., Martínez A., Martínez de la Escalera G., Trinchin R., Manta G., Segura A. M., Piccini C., Brena B., Fabiano G., Pírez M., Gabito L., Alcántara I., Yannicelli B", "2019", "Innotec", "https://doi.org/10.26461/18.06",
@@ -241,7 +242,7 @@ tribble(
   detailed_entries(what = title , when = year, with = jornadas, where = author, why = glue::glue("Modalidad: {modalidad}"))
 ```
 
-## 4.3. Informes técnicos	
+## Informes técnicos	
 
 ```{r}
 tribble(
@@ -272,6 +273,17 @@ tribble(
  detailed_entries(what = cargo , when = year, why = contexto)
 ```
 
+## Actividad profesional 
+
+
+```{r}
+tribble(
+  ~ cargo, ~ year, ~ contexto,
+"Asistente en departamento técnico Lanafil S.A. (Importación y Venta de Productos Fitosanitarios)", "4/2011 – 06/2016",
+"Diseño, ejecucción e intepretación de ensayos de eficacia agronómica de productos fitosanitarios. Apoyo en tareas de trabajo de campo y análisis de resultados. Confección de fichas de seguridad para materiales peligrosos. Asistencia en la preparación documentos de renovación de registro para presentar en MGAP") %>% 
+ detailed_entries(what = cargo , when = year, why = contexto)
+```
+
 
 ## Organización de eventos científicos	
 
@@ -297,17 +309,11 @@ Charla divulgación sobre el tema “Noctilucas” vinculado con la Canción de 
 Durante las jornadas colaboré recibiendo escuelas y liceos en el stand de la Sección Limnología. 
   - Presentación “ Efectos de la variabilidad ambiental sobre floraciones del complejo Microcystis aeruginosa”. En ciclos de Seminarios 2014, del Laboratorio de Etología, Ecología y Evolución del IIBCE.
 
-## Otros Antecedentes laborales	
+# Actividades de Cogobierno y Gestión
 
-```{r}
-tribble(
-  ~ cargo, ~ year, ~ contexto,
-"Asistente en departamento técnico Lanafil S.A. (Importación y Venta de Productos Fitosanitarios)", "4/2011 – 06/2016",
-"Diseño, ejecucción e intepretación de ensayos de eficacia agronómica de productos fitosanitarios. Apoyo en tareas de trabajo de campo y análisis de resultados. Confección de fichas de seguridad para materiales peligrosos. Asistencia en la preparación documentos de renovación de registro para presentar en MGAP") %>% 
- detailed_entries(what = cargo , when = year, why = contexto)
-```
+* Delegado representante (alterno) de la Facultad de Veterinaria en el Grupo de Trabajo propuestos por el MGAP sobre "Farmacovigilancia, Inocuidad y Residuos". Designado por Decano de Facultad de Veterinaria (18/5/2022)
 
-# Premios y distinciones recibidas	
+# Premios y distinciones recibidas
 
 * Mejor Tesis de Maestría - PEDECIBA Geociencias (2019) Dirección para el desarrollo de la Ciencia y el Conocimiento - MEC- Uruguay. “Mejor Tesis de Maestría”, otorgado por PEDECIBA Geociencias en las 3ª Jornadas de Reconocimiento a la Ciencia; Juntos en Investigación y Desarrollo, organizado por la Dirección para el desarrollo de la Ciencia y el Conocimiento, Ministerio de Educación y Cultura (MEC), Uruguay. 
 
