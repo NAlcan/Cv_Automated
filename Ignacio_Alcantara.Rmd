@@ -26,6 +26,7 @@ library(tidyverse)
   + Estadística para el control de Procesos
 
 # Estudios
+
 ## Títulos
 ```{r}
 tribble(
@@ -40,7 +41,7 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University)", "Facultad de Odontología", "GLM | Epidemiología| Lenguaje R",
+  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University)", "Escuela de Graduados Facultad de Odontología", "Regresión Logística | Epidemiología| Modelos GLMM",
     "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
   "The CODATA-RDA Research Data Science Summer School", "2020","Robert Quick (Indiana University, USA), Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de los datos", 
   "Estadística de Datos Extremos", "2019", "Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","Distribuciones Extremales | POT",
@@ -107,6 +108,7 @@ tribble(
 ```
 
 # Enseñanza
+
 ## Cargos Docentes
 
 ```{r}
@@ -257,7 +259,17 @@ tribble(
  detailed_entries(what = title , when = year, where = author, why = contexto)
 ```
 
-# Actividad Profesional, de Extensión y Relacionamiento
+## Proyectos concursados y financiados
+
+```{r}
+tribble(
+  ~ title, ~ author, ~ year, ~ contexto,
+"Desarrollo y puesta a punto de nuevas técnicas para caracterizar los minerales en leche, con impacto en la elaboración de quesos artesanales", "Proyectos de Inversión Cooperativos-2022-Modalidad Asociada. Ministerio de Industria, Energía y Minería, Dirección Nacional de Artesanías, Pequeñas y Medianas Empresas (MIEM/Dinapyme)", "2022 - 2023", " Instituciones participantes: Cooperativa COLAVECO (Responsable), Grupo de Queseros Artesanales; “Los Treinta”, FVet (UA de Ciencia y Tecnología de la Leche, UA de Bioestadistica). Rol: Asesor técnico-científico"
+) %>% 
+ detailed_entries(what = title , when = year, where = author, why = contexto)
+```
+
+# Actividad Profesional de Extensión y Relacionamiento
 
 ## Actividades de Investigación
 
@@ -305,26 +317,62 @@ tribble(
 
 ## Actividades de extensión y difusión
 
-  - Miembro organizador de Taller de trabajo interinstitucional perteneciente al proyecto “Análisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de Cianobacterias en el Río Uruguay y costa de Montevideo” financiado por el Fondo sectorial de investigación a partir de datos (2017) - Agencia Nacional de Innovación e Investigación de Uruguay y del cual (FSDA1/20171144351). 6/5/2019
-  - "Qué estudian los que estudian: Cianobacterias y Alertas tempranas", Programa Justicia Infinita radio Océano. 6/8/2018
-  - Ciclo “Ciencia y Arte”, Programa Transformaciones, Radio Sarandí.
-Charla divulgación sobre el tema “Noctilucas” vinculado con la Canción de Jorge Drexler. Ciclo organizado en conjunto con la producción del Programa y los Investigadores del Laboratorio de Etología, Ecología y Evolución: Dra. Anita Aisenberg, Msc. Rodrigo Postiglioni. Marzo 2017
-- Participación en las XVII Jornadas de Puertas Abiertas del Instituto de Investigaciones Biológicas Clemente Estable (IIBCE). 1/10/2016.
-  - Charla abierta sobre “Ecosistemas de agua dulce”. Dirigida a los alumnos de 4°, 5° y 6° del Liceo Nº 1 de Santa Lucía. A.N.E.P. En el marco del día mundial del Medio Ambiente. 5/6/2015.
-  - Participación en las jornadas de puertas abiertas realizada en la Facultad de Ciencias Mayo de 2014 y Mayo 2015. La jornadas de puertas abiertas se realizaron en el marco de la 9° y 10°Semana de la Ciencia y la Tecnología.
-Durante las jornadas colaboré recibiendo escuelas y liceos en el stand de la Sección Limnología. 
-  - Presentación “ Efectos de la variabilidad ambiental sobre floraciones del complejo Microcystis aeruginosa”. En ciclos de Seminarios 2014, del Laboratorio de Etología, Ecología y Evolución del IIBCE.
+```{r}
+
+tribble(
+  ~ actividad, ~ institucion, ~ anio, ~ contexto,
+  "Miembro organizador de Taller de trabajo interinstitucional perteneciente al proyecto \"Análisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de Cianobacterias en el Río Uruguay y costa de Montevideo\" ",
+ "Agencia Nacional de Innovación e Investigación de Uruguay", "2019", "Fondo sectorial de investigación a partir de datos (2017 - FSDA1/20171144351)",
+ "Qué estudian los que estudian: Cianobacterias y Alertas tempranas", "Programa Justicia Infinita radio Océano", "2018",
+ "Ciclo de entrevistas radiales a estudiantes de posgrados en diversas áreas de las ciencias",
+ "Charla divulgación sobre el tema “Noctilucas” vinculado con la Canción de Jorge Drexler", "Programa Transformaciones, Radio Sarandí", "2017", "Ciclo \"Ciencia y Arte\" organizado en conjunto con Investigadores del Laboratorio de Etología, Ecología y Evolución del Instituto de Investigaciones Clemente Estable, MEC, Uruguay",
+ "XVII Jornadas de Puertas Abiertas", "Instituto de Investigaciones Biológicas Clemente Estable, MEC, Uruguay", "2016", "Diseño y armado de stand con demostraciones en vivo sobre comunidades acuáticas",
+ "Charla sobre \" Ecosistemas de agua dulce \" ", "Liceo Nº 1 de Santa Lucía. A.N.E.P.", "2015", "Charla dirigida a los alumnos de 4°, 5° y 6° en el marco del día mundial del Medio Ambiente",
+ "Jornadas de puertas abiertas", "Facultad de Ciencias", "2014/2015", " En el marco de la 9° y 10°Semana de la Ciencia y la Tecnología. Durante las jornadas colaboré recibiendo escuelas y liceos en el stand de la Sección Limnología."
+ ) %>% 
+detailed_entries(what = actividad , when = anio, where = institucion, why = contexto)
+```
+
+# Tribunales y Comisiones Asesoras
+
+```{r}
+
+tribble(
+  ~ programa, ~ institucion, ~ anio, ~ rol,
+"Programa Ayudantes de Investigación CIDEC", "Comisión de Investigación y Desarrollo Científico (CIDEC) - Facultad de Veterinaria, Universidad de la República", "2022", "Evaluador de proyectos",
+"Proyectos de Investigación CIDEC", "Comisión de Investigación y Desarrollo Científico (CIDEC) - Facultad de Veterinaria, Universidad de la República", "2021", "Evaluador de proyectos",
+  ) %>% 
+detailed_entries(what = programa , when = anio, where = institucion, why = rol)
+
+```
+
 
 # Actividades de Cogobierno y Gestión
 
-* Delegado representante (alterno) de la Facultad de Veterinaria en el Grupo de Trabajo propuestos por el MGAP sobre "Farmacovigilancia, Inocuidad y Residuos". Designado por Decano de Facultad de Veterinaria (18/5/2022)
+```{r}
+
+tribble(
+  ~ actividad, ~ institucion, ~ anio, ~ contexto,
+"Delegado representante (alterno) de la Facultad de Veterinaria", "Grupo de Trabajo MGAP sobre \"Farmacovigilancia, Inocuidad y Residuos\" ", "2022", "Designado por Decano de Facultad de Veterinaria" 
+  ) %>% 
+detailed_entries(what = actividad , when = anio, where = institucion, why = contexto)
+
+```
+
 
 # Premios y distinciones recibidas
 
-* Mejor Tesis de Maestría - PEDECIBA Geociencias (2019) Dirección para el desarrollo de la Ciencia y el Conocimiento - MEC- Uruguay. “Mejor Tesis de Maestría”, otorgado por PEDECIBA Geociencias en las 3ª Jornadas de Reconocimiento a la Ciencia; Juntos en Investigación y Desarrollo, organizado por la Dirección para el desarrollo de la Ciencia y el Conocimiento, Ministerio de Educación y Cultura (MEC), Uruguay. 
+``` {r}
 
-* Mención a Mejor presentación Oral. “Floraciones de Cianobacterias en el Río Uruguay: frecuencia, distribución y relación con variables meteorológicas e hidrológicas.”VII JORNADAS DE GEOCIENCIAS, Montevideo, Uruguay
+tribble(
+  ~ titulo, ~ institucion, ~ anio, ~ contexto,
+  "Mejor Tesis de Maestría - PEDECIBA Geociencias", "Dirección para el desarrollo de la Ciencia y el Conocimiento, Ministerio de Educación y Cultura (MEC), Uruguay", "2019","3ª Jornadas de Reconocimiento a la Ciencia; Juntos en Investigación y Desarrollo",
+"Mención a Mejor presentación Oral", "VII Jornadas de Geociencias, Montevideo, Uruguay","2018", "Trabajo: \"Floraciones de Cianobacterias en el Río Uruguay: frecuencia, distribución y relación con variables meteorológicas e hidrológicas\" ",
+"Mención a mejor póster", "I Encuentro Nacional de Jóvenes Microbiólogos. Sociedad Uruguaya de Microbiología", "2014","Trabajo: \"Dinámica del complejo Microcystis aeruginosa (cianobacteria): forma, biomasa y producción de toxinas\" ",
+" Mención Especial proyecto: \"Herramientas para el monitoreo de floraciones algales nocivas (FAN): Desarrollo de una herramienta para la detección y cuantificación rápida de cianobacterias tóxicas en sistemas acuáticos basada en PCR en tiempo real\" ", "Premio L’Oréal-UNESCO - Por las Mujeres en la Ciencia", "2014", "Responsable del Proyecto: Claudia Piccini. Rol: Integrante del equipo" ) %>% 
+ detailed_entries(what = titulo , when = anio,where = institucion, why = contexto)
 
-* Mención a mejor póster “Dinámica del complejo Microcystis aeruginosa (cianobacteria): forma, biomasa y producción de toxinas”. I encuentro de jóvenes Microbiólogos, Sociedad Uruguaya de Microbiología 
+```
 
-* Premio L’Oréal-UNESCO 2014, “Por las Mujeres en la Ciencia” - “Mención Especial” al proyecto “Herramientas para el monitoreo de floraciones algales nocivas (FAN): Desarrollo de una herramienta para la detección y cuantificación rápida de cianobacterias tóxicas en sistemas acuáticos basada en PCR en tiempo real” .Responsable del Proyecto: Claudia Piccini- Integrantes: Carla Kruk, Danilo Calliari, Angel Segura, Paula Vico,Sylvia Bonilla, Ignacio Alcántara y Luis Aubriot.
+
+??? EVALUACIONES CIDEC
