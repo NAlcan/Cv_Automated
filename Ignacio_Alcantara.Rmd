@@ -373,6 +373,3 @@ tribble(
  detailed_entries(what = titulo , when = anio,where = institucion, why = contexto)
 
 ```
-
-
-??? EVALUACIONES CIDEC
