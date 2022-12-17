@@ -30,53 +30,54 @@ library(tidyverse)
 ## Títulos
 ```{r}
 tribble(
-  ~ Titulo, ~ Año, ~ Institución, ~ Lugar, ~ Tesis, 
-  "Doctorado en Producción animal", "2021 (en marcha)", "Facultad de Veterinaria, Universidad de la República", "Montevideo, Uruguay", "Farmacoeconomía y farmaecoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios de Uruguay",
-    "Mágister en Geociencias", "2015 - 2019", "PEDECIBA (MEC - UdealR)", "Montevideo, Uruguay","Niveles de riesgo de exposición a floraciones de Cianobacterias en el río Uruguay; forzantes ambientales y modelos de predicción",
-  "Licenciatura en Ciencias Biológicas (opc. Ecología)", "2009 - 2015", "Facultad de Ciencias, Universidad de la República", "Montevideo, Uruguay", "Efectos de la variabilidad ambiental sobre, presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa") %>% 
-  detailed_entries( Titulo, Año, Institución, Lugar, glue::glue("Título de tesis: {Tesis}"))
+  ~ Titulo, ~ Año, ~ Institución, ~ Lugar, ~ Tesis, ~Orientador,
+  "Doctorado en Producción animal", "2021 (en marcha)", "Facultad de Veterinaria, UdealR", "Montevideo, Uruguay", "Farmacoeconomía y farmaecoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios de Uruguay", "Orientador: Dr. Gonzalo Suárez",
+    "Mágister en Geociencias", "2015 - 2019", "Facultad de Ciencias - PEDECIBA, UdealR", "Montevideo, Uruguay","Niveles de riesgo de exposición a floraciones de Cianobacterias en el río Uruguay; forzantes ambientales y modelos de predicción",
+  "Orientadoras: Dra. Carla kruk, Dra. Claudia Piccini, Dra. Madeleine Renom",
+  "Licenciatura en Ciencias Biológicas (opc. Ecología)", "2009 - 2015", "Facultad de Ciencias, UdealR", "Montevideo, Uruguay", "Efectos de la variabilidad ambiental sobre presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa", "Orientadoras: Dra. Carla kruk, Dra. Claudia Piccini"
+  ) %>% 
+  detailed_entries( Titulo, Año, Institución, Lugar, c(glue::glue("Título de tesis: {Tesis}"), Orientador) )
 ```
 
 ## Cursos de formación
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University)", "Escuela de Graduados Facultad de Odontología", "Regresión Logística | Epidemiología| Modelos GLMM",
+  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University, USA)", "Escuela de Graduados Facultad de Odontología, UelaR - Montevideo, Uruguay", "Regresión Logística | Epidemiología| Modelos GLMM",
     "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
-  "The CODATA-RDA Research Data Science Summer School", "2020","Robert Quick (Indiana University, USA), Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de los datos", 
+  "The CODATA-RDA Research Data Science Summer School", "2020","Dr. Robert Quick (Indiana University, USA), Dr. Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste, Italia) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de datos", 
   "Estadística de Datos Extremos", "2019", "Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","Distribuciones Extremales | POT",
- "The CODATA-RDA Research Data Science", "2018", "Marcela Alfaro Córdoba (University of Costa Rica), Robert E Quick (Indiana University, USA)", "ICTP- SAIFR - San Pablo, Brasil", "Ciencia de datos | Software Libre | Estadística y visualización | reproducibilidad de datos",
+ "The CODATA-RDA Research Data Science", "2018", "Dra. Marcela Alfaro Córdoba (University of Costa Rica, Costa Rica), Dr. Robert Quick (Indiana University, USA)", "ICTP- SAIFR - San Pablo, Brasil", "Ciencia de datos | Software Libre | Estadística y visualización | reproducibilidad de datos",
  "Escuela de Verano en Métodos estadísticos avanzados en Ecología y Evolución", "2017", "Dr. Pablo Inchausti", "CURE, UdelaR - Maldonado, Uruguay", "Lenguaje R | GLMM | GAM",
  "Introducción a las Técnicas de aprendizaje automático", "2017","Dr. Mathias Bourel", "IMERL, Facultad de Ingenieria, UdelaR - Montevideo, Uruguay","Aprendizaje automático | Regresión y clasificación| Lenguaje R",
- "Las cianotoxinas como contaminantes de sistemas acuáticos. Metodologías de
-monitoreo y análisis", "2017","Dra Beatriz Brena", "Facultad de Quimica, UdelaR - Montevideo, Uruguay", "Analítica (ELISA, HPLC, MALDI-TOFF) | Cianobacterias | Ecotoxicidad",
-"Respuesta de los Ecosistemas Acuáticos a Impactos Antropogénicos","2016","Dra. Claudia Piccini", "Dpto. Microbiologia, Instituto Invesigaciones biológicas clemente estable - Montevideo, Uruguay", "Contaminación | Sistemas Socio-ecológicos | Gestión de ecosistemas acuáticos",
-"Estadística Avanzada y Aplicaciones","2016", "Dr. Angel Segura | Dra. Carolina Crisci | Dr. Mathias Bourel","CURE, UdelaR - Rocha, Uruguay", "Multivariados | Modelo Lineal | Aprendizaje Automático | Lenguaje R",
-"Ecología Funcional Acuática", "2016", "Dr. Angel Segura | Dra. Cecilia Alonso","CURE, UdelaR - Rocha, Uruguay", "Ecología Funcional | Oceanografía | Limnología | Estadística",
-"Introducción a la inferencia bayesiana y el análisis de modelos jerárquicos", "2015", "Prof. Tim Gerrodette (National Oceanic and Atmospheric Administration, SWFSC, NMFS, USA) | Mario A. Pardo (CICESE - Unidad La Paz. Mexico )", "CURE, UdelaR - Rocha, Uruguay", "Lenguajes R y BUGS | Inferencia de Bayes | Modelos Jerárquicos",
+ "Las cianotoxinas como contaminantes de sistemas acuáticos. Metodologías de monitoreo y análisis", "2017","Dra Beatriz Brena", "Facultad de Quimica, UdelaR - Montevideo, Uruguay", "ELISA, HPLC, MALDI-TOFF | Cianobacterias | Ecotoxicidad",
+"Respuesta de los Ecosistemas Acuáticos a Impactos Antropogénicos","2016","Dra. Claudia Piccini", "IIBCE, MEC, Montevideo, Uruguay", "Contaminación | Sistemas Socio-ecológicos | Gestión de ecosistemas acuáticos",
+"Estadística Avanzada y Aplicaciones","2016", "Dr. Angel Segura, Dra. Carolina Crisci, Dr. Mathias Bourel","CURE, UdelaR - Rocha, Uruguay", "Multivariados | Modelo Lineal | Aprendizaje Automático | Lenguaje R",
+"Ecología Funcional Acuática", "2016", "Dr. Angel Segura, Dra. Cecilia Alonso","CURE, UdelaR - Rocha, Uruguay", "Ecología Funcional | Oceanografía | Limnología | Estadística",
+"Introducción a la inferencia bayesiana y el análisis de modelos jerárquicos", "2015", "Dr. Tim Gerrodette (National Oceanic and Atmospheric Administration, SWFSC, NMFS, USA), Dr. Mario A. Pardo (CICESE - Unidad La Paz. Mexico )", "CURE, UdelaR - Rocha, Uruguay", "Lenguajes R y BUGS | Inferencia de Bayes | Modelos Jerárquicos",
 "Estructura y funcionamiento de ecosistemas y sistemas socio-ecológicos", "2015", "Dr. Néstor Mazzeo", "Facultad de Ciencias, UdelaR - Montevideo, Uruguay","Sistemas complejos | Teoría de ecosistemas | Manejo Ecosistémico",
 "Análisis y modelación de Datos", "2015"," Dr. Julio Gomez, Msc. Rafael Barboza", "Facultad de Ciencias, UdelaR - Montevideo, Uruguay", "Lenguaje R | Bioestadística | GLMM | GAM",
 "Dinámica de la Tierra", "2015", "Dra. Rossana Muzio", "Facultad de Ciencias, UdelaR - Montevideo, Uruguay", "Geología | Dinámica terrestre", 
-"El sistema climático", "2014", "Dr. Marcelo Barreiro | Dra. Madeleine Renom", "Facultad de Ciencias, UdelaR - Montevideo, Uruguay", "Dinámica climática | Interacción Océano- Atmósfera",
-"Seminarios en Ecología Funcional", "2013", "Dr. Danilo Calliari | Dra. Cecilia Alonso", "CURE, UdelaR - Rocha, Uruguay", "Ecología | Limnología | Oceanografía",
-"Citometría de flujo en sistemas acuáticos", "2013", "Dr. Joseph Gasol (Institut de Ciències del Mar-CSIC. Barcelona, Catalunya. España )", "CURE, UdelaR - Rocha, Uruguay", "Microbiología | Limnología | Oceanografía") %>% 
-  detailed_entries(Nombre, Año, InstitucionyLugar, glue::glue("Docente/s: {Docente}"), glue::glue("Palabras clave: {KeyWords}") )
+"El sistema climático", "2014", "Dr. Marcelo Barreiro, Dra. Madeleine Renom", "Facultad de Ciencias, UdelaR - Montevideo, Uruguay", "Dinámica climática | Interacción Océano- Atmósfera",
+"Seminarios en Ecología Funcional", "2013", "Dr. Danilo Calliari, Dra. Cecilia Alonso", "CURE, UdelaR - Rocha, Uruguay", "Ecología | Limnología | Oceanografía",
+"Citometría de flujo en sistemas acuáticos", "2013", "Dr. Joseph Gasol (Institut de Ciències del Mar-CSIC. Barcelona, Catalunya, España)", "CURE, UdelaR - Rocha, Uruguay", "Microbiología | Limnología | Oceanografía") %>% 
+  detailed_entries(Nombre, Año, InstitucionyLugar, glue::glue("Coordinador/es: {Docente}"), glue::glue("Palabras clave: {KeyWords}") )
 ```
 
 ## Cursos de corta duración (menos de 30 hrs)
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Taller Internacional de Formación Docente: Usos de tecnologías en la educación veterinaria", "2021", "Coordinadores: M. V Indiana Rodriguez y Dr. José Passarini", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo (virtual)","TICs | Educación Veterinaria | Formación Docente", 
-  "Open Data Steward Instructor Training","2021", "FAIRsFAIR programme", " FAIR data Forum. Comisión Europea (edición virtual)", "Gobernanza de Datos | Datos Abiertos | Seguridad de la Información | Pegagogia",
-  "Research Writing in the Sciences", "2021", "International Network for Advancing Science and Policy (edición virtual)", "AthorAID , Inglaterra", "Escritura Científica | Ética en investigación | Publicaciones",
-  "Pharmacometrics Spring School: Modeling Using MonolixSuite virtual course","2021","Dr Géraldine Ayral, Dr Pauline Traynard, Dr Monika Twarogowska, Dr Claude Magnard", "Lixoft (Simulations Plus)", "Farmacometria | Modelado Poblacional | Ensayos Clínicos",
-  "Análisis estadístico espacial en R", "2019","Dr. Paul Harris, Department of Sustainable Soils & Grassland Systems ‐ Rothamsted Research (North Wyke) | Dr. Alexis Comber, Professor and Chair of Spacial Data Analytics, Centre of Spacial Analysis and Policy (CSAP), University of Leeds, Reino Unido","Facultad de Agronomia, UdelaR - Montevideo, Uruguay","Objetos espaciales | Visualización | Regresión",
-  "Scientific Writing and Publishing Workshop", "2018","Dra. Claudia Etchebehere y MSc. María José Gonzalez" ,"Sociedad Uruguaya de Microbiología (SUM) y American Society of Microbiology (ASM) - Montevideo, Uruguay", "Escritura Cientifica | Comunicación", 
-  "Estadística Multivariada para Biólogos e introducción a R", "2013", "Dr. Angel Segura | Dra. Carla Kruk", "Instituto de Investigaciones Biológicas «Clemente Estable», Ministerio de Educación y Cultura, Uruguay", "Bioestadística | Modelo lineal | Multivariada | Lenguaje R",
-  "Adaptación evolutiva del zooplancton al cambio global", "2013", "Dr. Hans G. Dam (Department of Marine Sciences, University of Connecticut. USA)", "Minicurso en Congreso – XV Congreso Latinoamericano de ciencias del Mar", "Evolución | Ecología | Cambio climático"
+  "Taller Internacional de Formación Docente: Usos de tecnologías en la educación veterinaria", "2021", " M.Vet. Indiana Rodriguez, Dr. José Passarini", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo (virtual)","TICs | Educación Veterinaria | Formación Docente", 
+  "Open Data Steward Instructor Training","2021", "FAIRsFAIR programme", " FAIR data Forum. Comisión Europea (edición virtual)", "Gobernanza de Datos | Datos Abiertos | Seguridad de la Información | Pedagogia",
+  "Research Writing in the Sciences", "2021", "International Network for Advancing Science and Policy (edición virtual)", "AuthorAID , Inglaterra", "Escritura Científica | Ética en investigación | Publicaciones",
+  "Pharmacometrics Spring School: Modelling Using MonolixSuite virtual course","2021","Dra. Géraldine Ayral, Dra. Pauline Traynard, Dra. Monika Twarogowska, Dr. Claude Magnard", "Lixoft (Simulations Plus)", "Farmacometría | Modelado Poblacional | Ensayos Clínicos",
+  "Análisis estadístico espacial en R", "2019","Dr. Paul Harris (Rothamsted Research, Reino Unido ), Dr. Alexis Comber (Leeds University, Reino Unido)","Facultad de Agronomia, UdelaR - Montevideo, Uruguay","Datos espaciales | Regresiones Geográficas Multiescala| Mapas estadísticos",
+  "Scientific Writing and Publishing Workshop", "2018","Dra. Claudia Etchebere, MSc. María José Gonzalez" ,"Sociedad Uruguaya de Microbiología (SUM) y American Society of Microbiology (ASM) - Montevideo, Uruguay", "Escritura Cientifica | Comunicación", 
+  "Estadística Multivariada para Biólogos e introducción a R", "2013", "Dr. Angel Segura, Dra. Carla Kruk", "IIBCE, MEC - Montevideo, Uruguay", "Bioestadística | Modelo lineal | Multivariados | Lenguaje R",
+  "Adaptación evolutiva del zooplancton al cambio global", "2013", "Dr. Hans G. Dam (University of Connecticut, USA)", "Minicurso – XV Congreso Latinoamericano de Ciencias del Mar - Maldonado, Uruguay", "Evolución | Ecología | Cambio climático"
 ) %>% 
-  detailed_entries(Nombre, Año, InstitucionyLugar, glue::glue("Docente/s: {Docente}"), glue::glue("Palabras clave: {KeyWords}") )
+  detailed_entries(Nombre, Año, InstitucionyLugar, glue::glue("Coordinador/es: {Docente}"), glue::glue("Palabras clave: {KeyWords}") )
 ```
 
 ## Becas Obtenidas
@@ -84,13 +85,13 @@ tribble(
 ```{r}
 tribble(
   ~ Programa, ~ Año, ~ Institucion, ~ Trabajo, 
-  "Becas de apoyo a docentes para estudios de posgrado en la Udelar, Doctorado, 2022", "2022 - 2025", "Comisión Academica de Posgrado (CAP), Universidad de la República","Farmacoeconomía y Farmacoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios en el Uruguay",
-"Becas de Maestría - Posgrados Nacionales",  "05/2016-05/2018", "Agencia Nacional de Investigación e Innovación (ANII)", "Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas",
- "Escuela de Invierno Doctorados UC - área Ecología (Beca completa)", "8/2016" , "Pontificia Universidad Católica de Chile y PMI MECESUP PUC1203 (Santiago de Chile)", "Taller de Ecología del Cambio Global",
- "Beca de iniciación en investigación", "08/2014-08/2015", "Agencia Nacional de Investigación e Innovación (ANII)", "Efectos de la variabilidad ambiental y climática en las floraciones nocivas de cianobacterias en el Río Uruguay y Río de la Plata",
- "Pasantía de iniciación en investigación", "6/2014 - 10/2014", "PEDECIBA Geociencias",  "Efectos de la variabilidad ambiental sobre la presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa",
- "Fondo de apoyo para investigación para estudiantes de grado", "2014", "Sociedad Uruguaya de Microbiología (SUM)", "Efectos de los gradientes ambientales en la distribución, abundancia y morfología de colonias del complejo Microcystis spp. (Cyanobacteria): Río Uruguay y Río de la Plata",
- "Beca de grado", "2014", "Comisión Administradora del Río Uruguay (CARU)", "Floraciones
+  "Becas de apoyo a docentes para estudios de posgrado en la Udelar, Doctorado", "03/2022 - 03/2025", "CAP, UdelaR","Farmacoeconomía y Farmacoepidemiología de hábitos de consumo de garrapaticidas en sistemas agropecuarios en el Uruguay",
+"Becas de Maestría - Posgrados Nacionales",  "05/2016 - 05/2018", "ANII", "Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas",
+ "Escuela de Invierno Doctorados UC - área Ecología (Beca completa)", "08/2016" , "Pontificia Universidad Católica de Chile (Chile)", "Taller de Ecología del Cambio Global",
+ "Beca de iniciación en investigación", "08/2014 - 08/2015", "ANII", "Efectos de la variabilidad ambiental y climática en las floraciones nocivas de cianobacterias en el Río Uruguay y Río de la Plata",
+ "Pasantía de iniciación en investigación", "06/2014 - 10/2014", "PEDECIBA Geociencias", "Efectos de la variabilidad ambiental sobre la presencia, estructura comunitaria y floraciones del Complejo Microcystis aeruginosa",
+ "Fondo de apoyo para investigación para estudiantes de grado", "06/14", "Sociedad Uruguaya de Microbiología", "Efectos de los gradientes ambientales en la distribución, abundancia y morfología de colonias del complejo Microcystis spp. (Cyanobacteria): Río Uruguay y Río de la Plata",
+ "Beca de grado", "09/2014 - 02/2015", "Comisión Administradora del Río Uruguay (CARU)", "Floraciones
 del Complejo Microcystis aeruginosa (Cianobacteria) en el sistema Río Uruguay y Río de la
 Plata" ) %>% 
   detailed_entries(Programa, Año, Institucion, Trabajo)
@@ -114,8 +115,8 @@ tribble(
 ```{r}
 tribble(
   ~ Cargo, ~ Fecha, ~ Lugar,~ Desc, 
-  "Ayudante Docente" ,"1/2017 - Actual", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Grado 1 (efectivo, 20 hrs Semanales). Acceso por concurso de oposición y méritos",
-  "Ayudante Docente" ,"1/01/2022 - 31/12/2022", "Unidad de Bioestadística, Facultad de veterinaria, UdelaR", "Extension Horaria (20 - 30 hrs). Partida Área Tecnológica, fondos centrales"
+  "Ayudante Docente" ,"01/2017 - Actual", "Unidad de Bioestadística, Facultad de Veterinaria, UdelaR", "Grado 1 (efectivo, 20 hrs Semanales). Acceso por concurso de oposición y méritos",
+  "Ayudante Docente" ,"01/2022 - 12/2022", "Unidad de Bioestadística, Facultad de Veterinaria, UdelaR", "Extension Horaria (20 - 30 hrs). Partida Área Tecnológica, fondos centrales"
 ) %>% 
   detailed_entries(what = Cargo, when = Fecha,  with = Lugar, where = Desc)
 ```
@@ -126,10 +127,11 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Bioestadística I (Area I, semestre impar)","2017 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, Udelar", "Planificación del curso, dictado de grupos prácticos, dictado de clases teóricas, confección y corrección de parciales, exámenes",
-  "Talleres de apoyo paralelo al Curso de Bioestadística I", "2017 - 2020", "Plan de Desarrollo Estratégico - Facultad de Veterinaria, UdelaR","Planificación del taller, dictado de clases de apoyo en y Seguimiento de los estudiantes seleccionados en el curso de Bioestadística I",
-  "Biología, Medicina y preservación de Mamíferos Marinos en Uruguay", "4/2018", "Educación Permanente FVet – Dirección Nacional de Recurso Acuáticos", "Docente invitado. Dictado de dos clases teóricas y una actividad práctica en estación experimental DINARA- Cabo Polonio, Rocha. Responsable: Dr. Martin Lima",
-  "Seminarios de Introducción a la Biología II. Semin. 902 (semestra par)", "2015","Lic. en Ciencias Biológicas y Bioquímica. Facultad de Ciencias, UdelaR", "Planificación del taller. Dictado de clases teóricas y prácticas. Salida de campo. Evaluación de los estudiantes. Confección de preguntas de examen") %>% 
+  "Bioestadística I (Area III)","2021 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas,administración de plataforma Moodle (EVA), diseño y actualización del material didáctico en EVA y elaboración de ejercicios prácticos para planillas de cálculo, elaboración de ejercicios para evaluaciones semanales, parciales y exámenes, coordinación y mantenimiento del “Banco de Preguntas” en EVA para la automatización de las evaluaciones en parciales y exámenes",
+  "Bioestadística I (Area I)","2017 - 2020", "Dr. Ciencias Veterinarias (plan 1998). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas, administración de plataforma Moodle (EVA), elaboración de ejercicios para evaluaciones semanales, parciales y exámenes",
+  "Talleres de apoyo paralelo al Curso de Bioestadística I", "2017 - 2020", "Plan de Desarrollo Estratégico - Facultad de Veterinaria, UdelaR","Planificación del taller, dictado de clases de clases teóricas y prácticas de apoyo al curso de Bioestadística I, seguimiento estudiantes",
+  "Biología, medicina y preservación de mamíferos marinos en Uruguay", "2018", "Educación Permanente Facultad de Veterinaria, UdelaR – Dirección Nacional de Recurso Acuáticos, MGAP", "Docente invitado. Dictado de dos clases teóricas y una actividad práctica en estación experimental DINARA - Cabo Polonio, Rocha. Responsable: Dr. Martin Lima",
+  "Seminarios de Introducción a la Biología II. Semin. 902", "2015","Licenciaturas en Ciencias Biológicas y Bioquímica. Facultad de Ciencias, UdelaR", "Planificación del curso, dictado de clases teóricas y prácticas, coordinación y gestión de salida de campo, evaluación de los estudiantes, confección de preguntas de examen") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
 ```
 
@@ -138,9 +140,9 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol,
-  "R1 - Análisis de datos en R", "ed. 2021 y 2022", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
-  "Introducción al Análisis de datos en R", "2020", "Programa de Posgrado de la Facultad de Veterinaria (PPFV)", "Co-Responsable. Diseño del programa y planificación. Integrante del Tribunal de evaluación. Dictado de clases prácticas y teóricas",
-  "Ecología funcional del fitoplancton","5/2018", "Porgrama de posgrado PEDECIBA Geociencias", "Docente asistente de teorico y dictado de clases prácticas. Responsable: Dra. Carla Kruk") %>% 
+  "R1 - Análisis de datos en R", "2021 - Actualidad", "Programa de Posgrado, Facultad de Veterinaria, UdelaR", "Co-Responsable. Diseño, planificación y ejecución del programa, dictado de clases prácticas y teóricas, confección de evaluaciones, integrante del tribunal de evaluación",
+  "Introducción al Análisis de datos en R", "2020", "Programa de Posgrado, Facultad de Veterinaria, UdelaR", "Co-Responsable. Diseño, planificación y ejecución del programa, dictado de clases prácticas y teóricas, confección de evaluaciones, integrante del tribunal de evaluación",
+  "Ecología funcional del fitoplancton","2018", "PEDECIBA Geociencias, Facultad de Ciencias, UdelaR", "Docente de clases teóricas y prácticas, preparación de material práctico, participación en talleres de discusión. Responsable: Dra. Carla Kruk") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
 ```
 
@@ -152,7 +154,7 @@ tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
   "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", "Charlas:
         \" Elaboración de cuestionarios para Moodle usando el software R\". Rosenstock N., Alcántara I., Bobadilla P. | \"Indicadores basados en registros de Moodle para el seguimiento de la actividad estudiantil\". Bobadilla P., Alcántara I., Rosenstock N.",
-  "Taller: Ecología en el patio de la escuela", "2015","Liceo N°1 de Santa Lucía. A.N.E.P (3 hrs)", "Armado y dictado del taller para los grupos 1 y 2 de 5to biológico. Co Responsable junto con MSc. Emanuel Machín") %>% 
+  "Taller: Ecología en el patio de la escuela", "2015","Liceo N°1 de Santa Lucía. A.N.E.P", "Armado y dictado del taller para los grupos 1 y 2 de 5to biológico. Co Responsable junto con MSc. Emanuel Machín") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
 ```
 
@@ -163,9 +165,9 @@ tribble(
 ```{r}
 tribble(
   ~ Titulo, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bres. Diego Gérez y María Fernanda Paiva)", "3/2022 - 11/2022"," Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
-  "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bres. Henry Aguiar y Bach. Miguel Panza)", "8/2019 - 11/2020", "Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
- "Consumo de pescado en comunidades de pescadores artesanales del tramo bajo del Río Uruguay (Bach. Marcela Paíno)", "11/2017 - 9/2018","Tesis de grado Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Cristina Friss De Kereki, Co-Orientadores: Msc. Ignacio Alcántara, Lic. Miguel Angel Bellagamba. Rol: Asesoramiento en análisis estadístico") %>% 
+  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bres. Diego Gérez y María Fernanda Paiva)", "03/2022 - 11/2022"," Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
+  "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bres. Henry Aguiar y Bach. Miguel Panza)", "08/2019 - 11/2020", "Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
+ "Consumo de pescado en comunidades de pescadores artesanales del tramo bajo del Río Uruguay (Bach. Marcela Paíno)", "11/2017 - 09/2018","Tesis de grado Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Cristina Friss De Kereki, Co-Orientadores: Msc. Ignacio Alcántara, Lic. Miguel Angel Bellagamba. Rol: Asesoramiento en análisis estadístico") %>% 
   detailed_entries(what = Titulo, when = Fecha,  where = Rol, with = Carrera)
 ```
 
@@ -174,7 +176,7 @@ tribble(
 ```{r}
 tribble(
   ~ Titulo, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Efectos del género y la edad en el hipotiroidismo canino: énfasis en endocrinología y biología molecular (DMV. Matilde Canedo)", "1/2018 - 10/2018", "Maestría en Salud Animal, Programa de Posgrado de la Facultad de Veterinaria", "Orientador: Dra. Ana Paula Pessina, Rol: Coautor del trabajo, formación y orientación de la estudiante en análisis estadístico") %>% 
+  "Efectos del género y la edad en el hipotiroidismo canino: énfasis en endocrinología y biología molecular (DMV. Matilde Canedo)", "01/2018 - 10/2018", "Maestría en Salud Animal, Programa de Posgrado de la Facultad de Veterinaria", "Orientador: Dra. Ana Paula Pessina, Rol: Coautor del trabajo, formación y orientación de la estudiante en análisis estadístico") %>% 
   detailed_entries(what = Titulo, when = Fecha,  where = Rol, with = Carrera)
 ```
 
