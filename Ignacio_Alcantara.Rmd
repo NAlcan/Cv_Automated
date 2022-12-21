@@ -323,6 +323,8 @@ tribble(
 
 tribble(
   ~ actividad, ~ institucion, ~ anio, ~ contexto,
+  "Nota en prensa: \" La contundente respuesta de 53 investigadores a un artículo que afirma que no hay relación entre la
+agricultura y las cianobacterias \" ", "Medio: La Diaria", "2021", "link: https://ladiaria.com.uy/ciencia/articulo/2021/12/la-contundente-respuesta-de-53-investigadores-a-un-paper-que-afirma-que-no-hay-relacion-entre-la-agricultura-y-las-cianobacterias/. Publicado el: 04/12/2021",
   "Miembro organizador de Taller de trabajo interinstitucional perteneciente al proyecto \"Análisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de Cianobacterias en el Río Uruguay y costa de Montevideo\" ",
  "Agencia Nacional de Innovación e Investigación de Uruguay", "2019", "Fondo sectorial de investigación a partir de datos (2017 - FSDA1/20171144351)",
  "Qué estudian los que estudian: Cianobacterias y Alertas tempranas", "Programa Justicia Infinita radio Océano", "2018",
