@@ -43,7 +43,7 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University, USA)", "Escuela de Graduados Facultad de Odontología, UelaR - Montevideo, Uruguay", "Regresión Logística | Epidemiología| Modelos GLMM",
+  "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University, USA)", "Escuela de Graduados Facultad de Odontología, UdelaR - Montevideo, Uruguay", "Regresión Logística | Epidemiología| Modelos GLMM",
     "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
   "The CODATA-RDA Research Data Science Summer School", "2020","Dr. Robert Quick (Indiana University, USA), Dr. Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste, Italia) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de datos", 
   "Estadística de Datos Extremos", "2019", "Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","Distribuciones Extremales | POT",
@@ -127,7 +127,8 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Bioestadística I (Area III)","2021 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas,administración de plataforma Moodle (EVA), diseño y actualización del material didáctico en EVA y elaboración de ejercicios prácticos para planillas de cálculo, elaboración de ejercicios para evaluaciones semanales, parciales y exámenes, coordinación y mantenimiento del “Banco de Preguntas” en EVA para la automatización de las evaluaciones en parciales y exámenes",
+  "Bioestadística I (Area III)","2021 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas,administración de plataforma Moodle (EVA), diseño y actualización del material didáctico en EVA, elaboración de ejercicios prácticos para planillas de cálculo, elaboración de ejercicios para evaluaciones semanales, parciales y exámenes, coordinación y mantenimiento del “Banco de Preguntas” en EVA para la automatización de las evaluaciones en parciales y exámenes",
+"Herramientas matemáticas para la formación en el área biológica y biomédica", "2/2021 - 5/2021","Programa: Curso propedéutico de apoyo al  ingreso 2021. Comisión Sectorial de Enseñanza, UdelaR", "Profesor Ayudante. Diseño se contenidos, grabación de clases virtuales, diagramación de cartillas de prácticos y soluciones asociadas, dictado de clases de consulta",
   "Bioestadística I (Area I)","2017 - 2020", "Dr. Ciencias Veterinarias (plan 1998). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas, administración de plataforma Moodle (EVA), elaboración de ejercicios para evaluaciones semanales, parciales y exámenes",
   "Talleres de apoyo paralelo al Curso de Bioestadística I", "2017 - 2020", "Plan de Desarrollo Estratégico - Facultad de Veterinaria, UdelaR","Planificación del taller, dictado de clases de clases teóricas y prácticas de apoyo al curso de Bioestadística I, seguimiento estudiantes",
   "Biología, medicina y preservación de mamíferos marinos en Uruguay", "2018", "Educación Permanente Facultad de Veterinaria, UdelaR – Dirección Nacional de Recurso Acuáticos, MGAP", "Docente invitado. Dictado de dos clases teóricas y una actividad práctica en estación experimental DINARA - Cabo Polonio, Rocha. Responsable: Dr. Martin Lima",
@@ -152,8 +153,8 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", "Charlas:
-        \" Elaboración de cuestionarios para Moodle usando el software R\". Rosenstock N., Alcántara I., Bobadilla P. | \"Indicadores basados en registros de Moodle para el seguimiento de la actividad estudiantil\". Bobadilla P., Alcántara I., Rosenstock N.",
+  "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", " Elaboración de cuestionarios para Moodle usando el software R\". Rosenstock N., Alcántara I., Bobadilla P.",
+  "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", "Indicadores basados en registros de Moodle para el seguimiento de la actividad estudiantil\". Bobadilla P., Alcántara I., Rosenstock N.",
   "Taller: Ecología en el patio de la escuela", "2015","Liceo N°1 de Santa Lucía. A.N.E.P", "Armado y dictado del taller para los grupos 1 y 2 de 5to biológico. Co Responsable junto con MSc. Emanuel Machín") %>% 
   detailed_entries(what = Curso, when = Fecha,  where = Rol, with = Carrera)
 ```
@@ -165,9 +166,9 @@ tribble(
 ```{r}
 tribble(
   ~ Titulo, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bres. Diego Gérez y María Fernanda Paiva)", "03/2022 - 11/2022"," Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
-  "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bres. Henry Aguiar y Bach. Miguel Panza)", "08/2019 - 11/2020", "Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
- "Consumo de pescado en comunidades de pescadores artesanales del tramo bajo del Río Uruguay (Bach. Marcela Paíno)", "11/2017 - 09/2018","Doctor en ciencias Veterinarias (plan 1998)", "Orientador: Dra. Cristina Friss De Kereki, Co-Orientadores: Msc. Ignacio Alcántara, Lic. Miguel Angel Bellagamba. Rol: Asesoramiento en análisis estadístico") %>% 
+  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bach. Diego Gérez y María Fernanda Paiva)", "03/2022 - 11/2022"," Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
+  "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bach. Henry Aguiar y Miguel Panza)", "08/2019 - 11/2020", "Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
+ "Consumo de pescado en comunidades de pescadores artesanales del tramo bajo del Río Uruguay (Bach. Marcela Paíno)", "11/2017 - 09/2018","Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dra. Cristina Friss De Kereki, Co-Orientadores: Msc. Ignacio Alcántara, Lic. Miguel Angel Bellagamba. Rol: Asesoramiento en análisis estadístico") %>% 
   detailed_entries(what = Titulo, when = Fecha,  where = Rol, with = Carrera)
 ```
 
@@ -190,7 +191,7 @@ tribble(
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
   "A reply to `Relevant factors in the eutrophication of the Uruguay River and the Río Negro`", "Alcántara I., Somma A., Chalar G., Fabre A.,[...], García-Rodriguez F.","2022","Science of Total Environment","10.1016/j.scitotenv.2021.151854",
-  "Improved biovolume estimation of Microcystis aeruginosa colonies: A statistical approach", "Alcántara I., Piccini C., Segura A. M., Deus S., González C., de la Escalera G. M., & Kruk, C","2018","Journal of microbiological methods"," https://doi.org/10.1016/j.mimet.2018.05.021") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
+  "Improved biovolume estimation of Microcystis aeruginosa colonies: A statistical approach", "Alcántara I., Piccini C., Segura A. M., Deus S., González C., Martínez de la Escalera G., Kruk, C","2018","Journal of microbiological methods"," https://doi.org/10.1016/j.mimet.2018.05.021") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
 ```
  
 ### Autor Colaborador
@@ -202,11 +203,11 @@ tribble(
 "Benefits of Silvopastoral Systems for Keeping Beef Cattle", "Huertas, S.M, Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F.", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
 "El Índice de Actividad Individual de los estudiantes en EVA y sus rendimientos académicos: el caso de Bioestadística Veterinaria", "Bobadilla P., Alcántara I., Rosenstock N., Borlido C., Cabral P., Huertas S., Passarini J.", "2020", "Inter-Cambios. Dilemas y Transiciones de la Educación Superior","https://doi.org/10.29156/INTER.7.2.15",
 "Floración excepcional de Cianobacterias tóxicas en la costa de Uruguay, verano 2019", "Kruk C., Martínez A., Martínez de la Escalera G., Trinchin R., Manta G., Segura A. M., Piccini C., Brena B., Fabiano G., Pírez M., Gabito L., Alcántara I., Yannicelli B", "2019", "Innotec", "https://doi.org/10.26461/18.06",
-"Variabilidad y tendencia de la temperatura superficial de los grandes embalses del Río Negro", "Manta G., & Alcántara I","2018","Innotec", "https://doi.org/10.26461/16.07",
+"Variabilidad y tendencia de la temperatura superficial de los grandes embalses del Río Negro", "Manta G., Alcántara I","2018","Innotec", "https://doi.org/10.26461/16.07",
 "A multilevel trait-based approach to the ecological performance of Microcystis aeruginosa complex from headwaters to the ocean","Kruk C., Segura A. M., Nogueira L., Alcántara I., Calliari D., Martínez de la Escalera G., Carballo C., Cabrera C., Sarthou F., Scavone P., Piccini, C.","2017","Harmful Algae", "https://doi.org/10.1016/j.hal.2017.10.004",
-"Increased sampled volume improves Microcystis aeruginosa complex (MAC) colonies detection and prediction using Random Forests", "Segura A. M., Piccini C., Nogueira L., Alcántara I., Calliari D. and Kruk C", "2017", "Ecological Indicators", "http://dx.doi.org/10.1016/j.ecolind.2017.04.047",
+"Increased sampled volume improves Microcystis aeruginosa complex (MAC) colonies detection and prediction using Random Forests", "Segura A. M., Piccini C., Nogueira L., Alcántara I., Calliari D., Kruk C", "2017", "Ecological Indicators", "http://dx.doi.org/10.1016/j.ecolind.2017.04.047",
 "Dynamics of toxic genotypes of Microcystis aeruginosa complex (MAC) through a wide freshwater to marine environmental gradient", "Martínez de la Escalera G., Kruk C., Segura A. M., Nogueira L., Alcántara I., Piccini C.", "2017", "Harmful Algae", "http://dx.doi.org/10.1016/j.hal.2016.11.012",
-"Herramientas para el monitoreo y sistema de alerta de floraciones de cianobacterias nocivas: Río Uruguay y Río de la Plata", "Kruk C., Segura A., Nogueira L., Carballo C., Martínez de la Escalera G., Calliari D., Ferrari G., Simoens M., Cea J., Alcántara I., Vico P., Míguez D. y Piccini C.", "2015", "Innotec", "<http://ojs.latu.org.uy/index.php/INNOTEC/article/view/311>") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
+"Herramientas para el monitoreo y sistema de alerta de floraciones de cianobacterias nocivas: Río Uruguay y Río de la Plata", "Kruk C., Segura A., Nogueira L., Carballo C., Martínez de la Escalera G., Calliari D., Ferrari G., Simoens M., Cea J., Alcántara I., Vico P., Míguez D., Piccini C.", "2015", "Innotec", "<http://ojs.latu.org.uy/index.php/INNOTEC/article/view/311>") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
 ```
  
 ## Presentaciones en congresos
@@ -221,13 +222,13 @@ tribble(
 "Modelos de predicción de floraciones de Cianobacterias en el Río Uruguay: clasificación con datos des-balanceados", "Alcántara I., Piccini C., Renom., Kruk C.", "9-10/3/2018","IX Jornadas de Geocienias PEDECIBA", "Póster",
 "Predicción de floraciones de Cianobacterias en el Río Uruguay: modelos de clasificación con datos des-balanceados", "Alcántara I., Piccini C., Segura A. M., Renom M., Kruk C.", "27-28/10/2017", "IV Jornadas de Estadística Aplicada. MAREN–LPE", "Presentación Oral",
 "Alertas tempranas de Floraciones de Cianobacterias en el Río Uruguay basadas en modelos de predicción","Alcántara I., Piccini C., Renom M., Kruk C.", "26-27/9/2017", "Jornadas Científicas “Prof. Clemente Estable”", "Poster",
-"Floraciones de cianobacterias en el río uruguay: frecuencia, distribución y relación con variables hidrológicas y meteorológicas", "Alcántara I., Renom M., Piccini., Carla C.", "28-2/12/2016", "III Terceras jornadas interdisciplinarias en Biodiversidad y Ecología", "Presentación Oral",
+"Floraciones de cianobacterias en el río Uruguay: frecuencia, distribución y relación con variables hidrológicas y meteorológicas", "Alcántara I., Renom M., Piccini C., Kruk C.", "28-2/12/2016", "III Terceras jornadas interdisciplinarias en Biodiversidad y Ecología", "Presentación Oral",
 "Floraciones de Cianobacterias en el Río Uruguay: frecuencia, distribución y relación con variables meteorológicas e hidrológicas", "Alcántara, I., Renom M., Piccini C., Kruk C."," 25/11/2016", "VII Jornadas de Geociencias PEDECIBA", "Presentación Oral",
 "Predicción de Cianobacterias en el Embalse de Salto Grande y su aplicación en sistemas de alertas tempranas", "Alcántara I., Renom M., Piccini C., Kruk C.", "2-3/6/2016", "II Encuentro Nacional de Jóvenes Microbiólogos. SUM", "Póster",
-"Floraciones tóxicas y variabilidad climática en el río uruguay y río de la plata", "Alcántara I., Segura A. M., Piccini C., Calliari D., Renom M., Kruk C.", "4/12/2015", "VI Jornadas de Geociencias PEDECIBA", "Póster",
+"Floraciones tóxicas y variabilidad climática en el río Uuruguay y Río de la Plata", "Alcántara I., Segura A. M., Piccini C., Calliari D., Renom M., Kruk C.", "4/12/2015", "VI Jornadas de Geociencias PEDECIBA", "Póster",
 "Modelo de estimación del biovolumen para colonias del complejo Microcystis Aeruginosa",
-"Alcántara I., Segura A. M., Calliari D., Piccini, C., Kruk, C", "5-7/11/2015", "III Jornadas de Estadística Aplicada. LPE-MAREN", "Presentación Oral",
-"Efectos de la variabilidad ambiental sobre floraciones del complejo Microcystis Aeruginosa"," Alcántara I., Segura A., Renom M., Piccini C., Calliari D., Kruk C.", "3-5/12/2014", " II Jornadas Interdisciplinarias en Biodiversidad y Ecología", "Presentación Oral",
+"Alcántara I., Segura A. M., Calliari D., Piccini C., Kruk C.", "5-7/11/2015", "III Jornadas de Estadística Aplicada. LPE-MAREN", "Presentación Oral",
+"Efectos de la variabilidad ambiental sobre floraciones del complejo Microcystis Aeruginosa"," Alcántara I., Segura A. M., Renom M., Piccini C., Calliari D., Kruk C.", "3-5/12/2014", " II Jornadas Interdisciplinarias en Biodiversidad y Ecología", "Presentación Oral",
 "Dinámica del complejo Microcystis Aeruginosa (cianobacteria): forma, biomasa y producción de toxinas"," Alcántara, I., Martínez de la Escalera G., Kruk C., Segura A. M., Calliari D., Piccini C.", "9-10/10/2014", "I Encuentro Nacional de Jóvenes Microbiólogos. Sociedad Uruguaya de Microbiología", "Póster",
 "Aplicación de herramientas no convencionales en la detección y cuantificación en bajas abundancias del complejo microcystis aeruginosa (CMA)", "Alcántara I., Nogueira L., Segura A. M., Calliari D., Piccini C., Kruk C.", "19-21/8/2014","I Jornadas Sobre Eutrofización y Floraciones Algales en el Río Uruguay, CARU", "Póster") %>%
   detailed_entries(what = title , when = year, with = jornadas, where = author, why = glue::glue("Modalidad: {modalidad}"))
@@ -238,16 +239,16 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ jornadas, ~ modalidad,
-  "Development of drug-drug interaction models in vitro for macrocyclic lactones and their understanding","Gonzalo Suárez, Ignacio Alcántara, Gustavo Salinas", "2022","RedIF Congress 2022; Ibero-American network in pharmacometrics", "Póster",
-  "¿La estrategia de control garrapaticida en bovinos afectaría la presencia parasitaria si se inicia con Fluazuron o Ivermectina como primer tratamiento generacional?","Suárez G., Robaina D., Alcántara I., Arambillete D","2022", "I Congreso de Producción Animal de Colombia \"COPACO-2022\" ", "Presentación oral",
+  "Development of drug-drug interaction models in vitro for macrocyclic lactones and their understanding","Suárez G., Alcántara I., Salinas G.", "2022","RedIF Congress 2022; Ibero-American network in pharmacometrics", "Póster",
+  "¿La estrategia de control garrapaticida en bovinos afectaría la presencia parasitaria si se inicia con Fluazuron o Ivermectina como primer tratamiento generacional?","Suárez G., Robaina D., Alcántara I., Arambillete D.","2022", "I Congreso de Producción Animal de Colombia \"COPACO-2022\" ", "Presentación oral",
   "Is Combination of Ivermectin plus Eprinomectin really a benefit?", "Suárez G., Alcántara I., Salinas G.","2021" ,"Conference of the World Association for the Advancement of Veterinary Parasitology (28th edition)", "Póster",
-"Distribución de genotipos tóxicos de microcystis spp. en el sistema río uruguay – río de la plata", "Piccini C., Martínez de la Escalera G., Segura A., Alcántara I., Kruk C", "5/2015", "Congreso de Ficología Argentina", "Presentación oral",
-"Predicciones de floraciones de cianobacterias con bosques aleatorios: ríos, estuarios, y computadores", "Segura A., Calliari D., Alcántara I., Piccini C., y Kruk C.", "12/2014", "II Jornadas de Estadística Aplicada, LPE-MAREN", "Presentación Oral",
-"Herramientas para el monitoreo y predicción de floraciones de fitoplancton nocivo", "Kruk C., Segura A., Calliari D., Nogueira L., Martínez de la Escalera G. Miguez D., Carballo C., Alcántara I., Simoens M., Keel K., Cea J., Cabrera C., Piccini C.", "12/2014", " II Jornadas Interdisciplinarias en Biodiversidad y Ecología", "Presentación oral",
+"Distribución de genotipos tóxicos de Microcystis spp. en el sistema río Uruguay – Río de la Plata", "Piccini C., Martínez de la Escalera G., Segura A. M., Alcántara I., Kruk C.", "5/2015", "Congreso de Ficología Argentina", "Presentación oral",
+"Predicciones de floraciones de cianobacterias con bosques aleatorios: ríos, estuarios, y computadores", "Segura A. M., Calliari D., Alcántara I., Piccini C., Kruk C.", "12/2014", "II Jornadas de Estadística Aplicada, LPE-MAREN", "Presentación Oral",
+"Herramientas para el monitoreo y predicción de floraciones de fitoplancton nocivo", "Kruk C., Segura A. M., Calliari D., Nogueira L., Martínez de la Escalera G. Miguez D., Carballo C., Alcántara I., Simoens M., Keel K., Cea J., Cabrera C., Piccini C.", "12/2014", " II Jornadas Interdisciplinarias en Biodiversidad y Ecología", "Presentación oral",
 "Factores que condicionan la abundancia y proliferación de poblaciones de cianobacterias y algas tóxicas en el sistema río uruguay-río de la plata", "Piccini C., Martínez de la Escalera G., Simoens M., Cea J., Nogueira L., Segura A., Alcántara I., Calliari D., Kruk C.", "8/2014", "I Jornadas Sobre Eutrofización y Floraciones Algales en el Río Uruguay, CARU", "Conferencia Magistral",
-"Respuestas funcionales del complejo Microcystis Aeruginosa en sistemas limnico-estuarinos: evidencia experimental y de campo", "Kruk C., Segura A. M., Calliari D., Nogueira L., Martinez de la Escalera G., Alcántara I., Carballo C., Cabrera C., Sarthou F., Piccini. C.", "8/2014", "I Jornadas Sobre Eutrofización y Floraciones Algales en el Río Uruguay, CARU",  "Presentación Oral",
-"Segura A M., Alcántara I., Nogueira L., Ferrari G., Calliari D., Piccini C., Kruk C.", "Predicción de la presencia del complejo Microcystis Aeruginosa (CMA) en el rio uruguay y rio de la plata mediante análisis de bosques aleatorios", "8/2014", "I Jornadas Sobre Eutrofización y Floraciones Algales en el Río Uruguay, CARU",  "Presentación oral",
-"Microcystis aeruginosa la cianobacteria formadora de floraciones más exitosa del planeta: su distribución a lo largo de un amplio gradiente geográfico en uruguay", "Kruk C., Piccini C., Nogueira L., Segura A., Calliari D., Ferrari G., Alcántara I., Míguez D.", "10/2013", "XV Congreso Latinoamericano de Ciencias del Mar – COLACMAR", "Presentación Oral",
+"Respuestas funcionales del complejo Microcystis aeruginosa en sistemas limnico-estuarinos: evidencia experimental y de campo", "Kruk C., Segura A. M., Calliari D., Nogueira L., Martinez de la Escalera G., Alcántara I., Carballo C., Cabrera C., Sarthou F., Piccini. C.", "8/2014", "I Jornadas Sobre Eutrofización y Floraciones Algales en el Río Uruguay, CARU",  "Presentación Oral",
+"Predicción de la presencia del complejo Microcystis Aeruginosa (CMA) en el rio uruguay y rio de la plata mediante análisis de bosques aleatorios","Segura A M., Alcántara I., Nogueira L., Ferrari G., Calliari D., Piccini C., Kruk C.", "8/2014", "I Jornadas Sobre Eutrofización y Floraciones Algales en el Río Uruguay, CARU",  "Presentación oral",
+"Microcystis aeruginosa la cianobacteria formadora de floraciones más exitosa del planeta: su distribución a lo largo de un amplio gradiente geográfico en uruguay", "Kruk C., Piccini C., Nogueira L., Segura A. M., Calliari D., Ferrari G., Alcántara I., Míguez D.", "10/2013", "XV Congreso Latinoamericano de Ciencias del Mar – COLACMAR", "Presentación Oral",
 ) %>%
   detailed_entries(what = title , when = year, with = jornadas, where = author, why = glue::glue("Modalidad: {modalidad}"))
 ```
@@ -257,7 +258,7 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ contexto,
-"Herramientas para la detección, monitoreo y predicción de floraciones de cianobacterias y algas nocivas", "Piccini C., Kruk C., Míguez D., Segura A., Calliari D., Cea J., Simoens M., Nogueira L., Martínez de la Escalera G., Keel k., Carballo C., Colina M., Vico P., Alcántara I., Ferrari G.", "2014", " Proyecto Inter - Institucional `ALGAS`. UdelaR (FC y CURE Rocha), IIBCE, LATU. Financiación: ANII") %>% 
+"Herramientas para la detección, monitoreo y predicción de floraciones de cianobacterias y algas nocivas", "Piccini C., Kruk C., Míguez D., Segura A., Calliari D., Cea J., Simoens M., Nogueira L., Martínez de la Escalera G., Keel K., Carballo C., Colina M., Vico P., Alcántara I., Ferrari G.", "2014", " Proyecto Inter - Institucional `ALGAS`. UdelaR (FC y CURE Rocha), IIBCE, LATU. Financiación: ANII") %>% 
  detailed_entries(what = title , when = year, where = author, why = contexto)
 ```
 
@@ -271,15 +272,14 @@ tribble(
  detailed_entries(what = title , when = year, where = author, why = contexto)
 ```
 
-# Actividad Profesional de Extensión y Relacionamiento
+# Actividad Profesional y de Extensión y Relacionamiento
 
 ## Actividades de Investigación
 
 ```{r}
 tribble(
   ~ cargo, ~ year, ~ contexto,
-  "Profesor Ayudante proyecto: Herramientas matemáticas para la formación en el área biológica y biomédica", "2/2021 - 5/2021","Programa: Curso propedéutico de apoyo al  ingreso 2021. Comisión Sectorial de Enseñanza, UdelaR",
-"Ayudante de investigación proyecto: “Analisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de cianobacterias en el Río Uruguay y costa de Montevideo”", "4/2018 - 12/2019", "Fondo sectorial de investigación a partir de datos abiertos (FSDA_1_2017_1_144351). Responsables: Dra. Carla Kruk, Dra. Beatriz Yannicelli. CURE - UdelaR",
+"Ayudante de investigación proyecto: “Analisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de cianobacterias en el Río Uruguay y costa de Montevideo”", "4/2018 - 12/2019", "Fondo sectorial de investigación a partir de datos abiertos (FSDA_1_2017_1_144351). Responsables: Dra. Kruk C., Dra. Yannicelli B. CURE - UdelaR",
 "Pasante de Investigación, Departamento de Microbiología, Instituto de investigaciones Biológicas Clemente Estable", "6/2018 - 12/2018", "Equivalente Grado 1 (20 hrs semanales). Acceso por concurso de méritos",
 "Becario de Maestría (ANII- Postgrado Nacionales 2015): “Predicción de floraciones de cianobacterias basada en variables meteorológicas, hídricas y ambientales aplicable a sistemas de alertas tempranas”", "5/2016 - 5/2018", "Orientadora: Dra. Kruk C. Co-Orientadoras: Dra. Piccini C., Dra. Renom M. Facultad de Ciencias, UdelaR. Departamento de Microbiología, IIBCE",
 "Pasante de Investigación, Departamento de Microbiología, Instituto de investigaciones Biológicas Clemente Estable", "6/2016 - 12/2016", "Equivalente Grado 1 (20 hrs semanales). Acceso por concurso de méritos",
@@ -287,8 +287,8 @@ tribble(
 "Orientadora: Dra. Kruk C. Co-Orientadoras: Dra. Piccini C., Dra. Renom M. Facultad de Ciencias, UdelaR. Departamento de Microbiología, IIBCE",
 "Becario de Iniciación en investigación (ANII- Becas de grado): “Efectos de la variabilidad ambiental y climática en las floraciones nocivas de cianobacterias en el Río Uruguay y Río de la Plata”", "3/2013 - 3/2015", "Orientadora: Dra. Kruk C. Co-Orientadoras: Dra. Piccini C., Dra. Renom M. Facultad de Ciencias, UdelaR. Departamento de Microbiología, IIBCE",
 "Pasante de Investigación PEDECIBA Geociencias: “Floraciones tóxicas y condiciones meteorológicas en el Río Uruguay y Río de la Plata”", "6/2014 - 12/2014", "Orientadora: Dra. Kruk C. Co-Orientadoras: Dra. Piccini C., Dra. Renom M. Facultad de Ciencias, UdelaR. Departamento de Microbiología, IIBCE",
-"Participante honorario proyecto “Herramientas para el monitoreo de floraciones nocivas de cianobacterias”. Responsables: Dra Carla Kruk; Dra Claudia Piccini. Proyecto LATU- Programa Medio Ambiente 2011", "2/2013 - 10/2014", "Tareas desempeñadas: Participación en las campañas de muestreo realizadas con embarcaciones en el Río Uruguay y Río de la Plata; Medidas in situ de variables físicas y químicas de la columna de agua. Toma de muestras para plancton con distintas metodologías. Participación de las plenarias de discusión de resultados",
-"Participante honorario en Muestreos limnológicos en lagos de la costa en el marco de la tesis de Maestría de la Lic. Carmela Carballo. Orientadores: Dr. Danilo Calliari y la Dra Carla Kruk", "9/2012 - 9/2013", "Tareas desempeñadas: Medidas in situ de variables físicas y químicas de la columna de agua, muestreo de comunidades planctónicas"
+"Participante honorario proyecto “Herramientas para el monitoreo de floraciones nocivas de cianobacterias”. Proyecto LATU-Programa Medio Ambiente 2011", "2/2013 - 10/2014", "Tareas desempeñadas: Participación en las campañas de muestreo realizadas con embarcaciones en el Río Uruguay y Río de la Plata; Medidas in situ de variables físicas y químicas de la columna de agua. Toma de muestras para plancton con distintas metodologías. Participación de las plenarias de discusión de resultados. Responsables: Dra Kruk C., Dra Piccini C.",
+"Participante honorario en Muestreos limnológicos en lagos de la costa en el marco de la tesis de Maestría de la Lic. Carmela Carballo.", "9/2012 - 9/2013", "Tareas desempeñadas: Medidas in situ de variables físicas y químicas de la columna de agua, muestreo de comunidades planctónicas. Orientadores: Dr. Calliari C., Dra. Kruk C."
 ) %>% 
  detailed_entries(what = cargo , when = year, why = contexto)
 ```
@@ -299,6 +299,7 @@ tribble(
 ```{r}
 tribble(
   ~ cargo, ~ year, ~ contexto,
+  "Instructor en métodos estadísticos aplicados para Control de Procesos y Auditorias en Sistemas Integrados de Gestión - LSQA Sistemas (LATU)", "2019 - Actualidad", "Docente instructor en la división LSQA - Academy. Planificación programas y contenidos. Dictado de clases teóricas, prácticas y talleres bajo modalidades presencial y virtual para participantes nacional y extranjeros",
 "Asistente en departamento técnico Lanafil S.A. (Importación y Venta de Productos Fitosanitarios)", "4/2011 – 06/2016",
 "Diseño, ejecucción e intepretación de ensayos de eficacia agronómica de productos fitosanitarios. Apoyo en tareas de trabajo de campo y análisis de resultados. Confección de fichas de seguridad para materiales peligrosos. Asistencia en la preparación documentos de renovación de registro para presentar en MGAP") %>% 
  detailed_entries(what = cargo , when = year, why = contexto)
@@ -327,7 +328,7 @@ tribble(
 agricultura y las cianobacterias \" ", "Medio: La Diaria", "2021", "link: https://ladiaria.com.uy/ciencia/articulo/2021/12/la-contundente-respuesta-de-53-investigadores-a-un-paper-que-afirma-que-no-hay-relacion-entre-la-agricultura-y-las-cianobacterias/. Publicado el: 04/12/2021",
   "Miembro organizador de Taller de trabajo interinstitucional perteneciente al proyecto \"Análisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de Cianobacterias en el Río Uruguay y costa de Montevideo\" ",
  "Agencia Nacional de Innovación e Investigación de Uruguay", "2019", "Fondo sectorial de investigación a partir de datos (2017 - FSDA1/20171144351)",
- "Qué estudian los que estudian: Cianobacterias y Alertas tempranas", "Programa Justicia Infinita radio Océano", "2018",
+ "Nota en radio: \"Qué estudian los que estudian: Cianobacterias y Alertas tempranas\" ", "Programa Justicia Infinita radio Océano", "2018",
  "Ciclo de entrevistas radiales a estudiantes de posgrados en diversas áreas de las ciencias",
  "Charla divulgación sobre el tema “Noctilucas” vinculado con la Canción de Jorge Drexler", "Programa Transformaciones, Radio Sarandí", "2017", "Ciclo \"Ciencia y Arte\" organizado en conjunto con Investigadores del Laboratorio de Etología, Ecología y Evolución del Instituto de Investigaciones Clemente Estable, MEC, Uruguay",
  "XVII Jornadas de Puertas Abiertas", "Instituto de Investigaciones Biológicas Clemente Estable, MEC, Uruguay", "2016", "Diseño y armado de stand con demostraciones en vivo sobre comunidades acuáticas",
@@ -373,7 +374,7 @@ tribble(
   "Mejor Tesis de Maestría - PEDECIBA Geociencias", "Dirección para el desarrollo de la Ciencia y el Conocimiento, Ministerio de Educación y Cultura (MEC), Uruguay", "2019","3ª Jornadas de Reconocimiento a la Ciencia; Juntos en Investigación y Desarrollo",
 "Mención a Mejor presentación Oral", "VII Jornadas de Geociencias, Montevideo, Uruguay","2018", "Trabajo: \"Floraciones de Cianobacterias en el Río Uruguay: frecuencia, distribución y relación con variables meteorológicas e hidrológicas\" ",
 "Mención a mejor póster", "I Encuentro Nacional de Jóvenes Microbiólogos. Sociedad Uruguaya de Microbiología", "2014","Trabajo: \"Dinámica del complejo Microcystis aeruginosa (cianobacteria): forma, biomasa y producción de toxinas\" ",
-" Mención Especial proyecto: \"Herramientas para el monitoreo de floraciones algales nocivas (FAN): Desarrollo de una herramienta para la detección y cuantificación rápida de cianobacterias tóxicas en sistemas acuáticos basada en PCR en tiempo real\" ", "Premio L’Oréal-UNESCO - Por las Mujeres en la Ciencia", "2014", "Responsable del Proyecto: Claudia Piccini. Rol: Integrante del equipo" ) %>% 
+"Mención Especial proyecto: \"Herramientas para el monitoreo de floraciones algales nocivas (FAN): Desarrollo de una herramienta para la detección y cuantificación rápida de cianobacterias tóxicas en sistemas acuáticos basada en PCR en tiempo real\" ", "Premio L’Oréal-UNESCO - Por las Mujeres en la Ciencia", "2014", "Responsable del Proyecto: Claudia Piccini. Rol: Integrante del equipo" ) %>% 
  detailed_entries(what = titulo , when = anio,where = institucion, why = contexto)
 
 ```
