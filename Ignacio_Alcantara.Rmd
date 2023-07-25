@@ -43,6 +43,7 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
+  "Monitoring outbreaks for disease surveillance in a data science context", "20230", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 N° 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
   "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University, USA)", "Escuela de Graduados Facultad de Odontología, UdelaR - Montevideo, Uruguay", "Regresión Logística | Epidemiología| Modelos GLMM",
     "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
   "The CODATA-RDA Research Data Science Summer School", "2020","Dr. Robert Quick (Indiana University, USA), Dr. Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste, Italia) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de datos", 
@@ -199,8 +200,9 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
+  "Relationship between strains of Holstein cows, feeding strategies and udder health","Morales-Piñeyrúa J.T., Bobadilla P., Alcántara I., De Torres E.","2023","Agrociencia","https://doi.org/10.31285/agro.27.1150 ",
   "Caenorhabditis elegans as a valuable model for the study of anthelmintic pharmacodynamics and drug-drug interactions: The case of ivermectin and eprinomectin", "Suárez, G., Alcántara I., Salinas G.","2022","Front. Pharmacol.","10.3389/fphar.2022.984905",
-"Benefits of Silvopastoral Systems for Keeping Beef Cattle", "Huertas, S.M, Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F.", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
+"Benefits of Silvopastoral Systems for Keeping Beef Cattle", "Huertas S.M., Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F.", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
 "El Índice de Actividad Individual de los estudiantes en EVA y sus rendimientos académicos: el caso de Bioestadística Veterinaria", "Bobadilla P., Alcántara I., Rosenstock N., Borlido C., Cabral P., Huertas S., Passarini J.", "2020", "Inter-Cambios. Dilemas y Transiciones de la Educación Superior","https://doi.org/10.29156/INTER.7.2.15",
 "Floración excepcional de Cianobacterias tóxicas en la costa de Uruguay, verano 2019", "Kruk C., Martínez A., Martínez de la Escalera G., Trinchin R., Manta G., Segura A. M., Piccini C., Brena B., Fabiano G., Pírez M., Gabito L., Alcántara I., Yannicelli B", "2019", "Innotec", "https://doi.org/10.26461/18.06",
 "Variabilidad y tendencia de la temperatura superficial de los grandes embalses del Río Negro", "Manta G., Alcántara I","2018","Innotec", "https://doi.org/10.26461/16.07",
