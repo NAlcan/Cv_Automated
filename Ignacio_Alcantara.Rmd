@@ -1,7 +1,7 @@
 ---
 name: Ignacio
 surname: Alcántara
-position: "Docente Ayudante"
+position: "Docente Asistente"
 address: "Ud. Bioestadística, Facultad de Veterinaria, Universidad de la República"
 email: "nalcann@gmail.com"
 github: NAlcan
@@ -43,7 +43,8 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
-  "Monitoring outbreaks for disease surveillance in a data science context", "20230", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 N° 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
+  "Second School on Data Science and Machine Learning","2023","Raphael Cobe (NCC-UNESP/AI2, Brazil), Sergio F. Novaes (UNESP/AI2, Brazil), Thiago Tomei (NCC-UNESP/AI2, Brazil)", "NCC-UNESP, São Paulo, Brazil"," Machine Learning | Neural Networks | Generative Models | Natural Language Processing",
+  "Monitoring outbreaks for disease surveillance in a data science context", "2023", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 N° 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
   "Estadística Analítica: regresión logística e introducción a modelos mixtos", "2022", "Dra. Natalia Cernicchiaro (Kansas State University, USA)", "Escuela de Graduados Facultad de Odontología, UdelaR - Montevideo, Uruguay", "Regresión Logística | Epidemiología| Modelos GLMM",
     "Herramientas de Análisis de Series de Tiempo", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA y SARIMA | Estimación de parámetros | Análisis espectral",
   "The CODATA-RDA Research Data Science Summer School", "2020","Dr. Robert Quick (Indiana University, USA), Dr. Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste, Italia) - Edición Virtual", "Ciencia de datos | Reproducibilidad | Gobernanza de datos", 
@@ -116,7 +117,8 @@ tribble(
 ```{r}
 tribble(
   ~ Cargo, ~ Fecha, ~ Lugar,~ Desc, 
-  "Ayudante Docente" ,"01/2017 - Actual", "Unidad de Bioestadística, Facultad de Veterinaria, UdelaR", "Grado 1 (efectivo, 20 hrs Semanales). Acceso por concurso de oposición y méritos",
+  "Asistente Docente", "01/2024 - Actual","Unidad de Bioestadística, Facultad de Veterinaria, UdelaR", "Grado 2 (efectivo, 24 hrs Semanales). Acceso por concurso de oposición y méritos",
+  "Ayudante Docente" ,"01/2017 - 12/2023", "Unidad de Bioestadística, Facultad de Veterinaria, UdelaR", "Grado 1 (efectivo, 20 hrs Semanales). Acceso por concurso de oposición y méritos",
   "Ayudante Docente" ,"01/2022 - 12/2022", "Unidad de Bioestadística, Facultad de Veterinaria, UdelaR", "Extension Horaria (20 - 30 hrs). Partida Área Tecnológica, fondos centrales"
 ) %>% 
   detailed_entries(what = Cargo, when = Fecha,  with = Lugar, where = Desc)
@@ -128,6 +130,7 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
+  "Bioestadística II (Area IV)","2023 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas,administración de plataforma Moodle (EVA), diseño y actualización del material didáctico en EVA, elaboración de ejercicios prácticos para planillas de cálculo, elaboración de ejercicios para evaluaciones semanales, parciales y exámenes, coordinación y mantenimiento del “Banco de Preguntas” en EVA para la automatización de las evaluaciones en parciales y exámenes",
   "Bioestadística I (Area III)","2021 - Actualidad", "Médico Veterinario (plan 2021). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas,administración de plataforma Moodle (EVA), diseño y actualización del material didáctico en EVA, elaboración de ejercicios prácticos para planillas de cálculo, elaboración de ejercicios para evaluaciones semanales, parciales y exámenes, coordinación y mantenimiento del “Banco de Preguntas” en EVA para la automatización de las evaluaciones en parciales y exámenes",
 "Herramientas matemáticas para la formación en el área biológica y biomédica", "2/2021 - 5/2021","Programa: Curso propedéutico de apoyo al  ingreso 2021. Comisión Sectorial de Enseñanza, UdelaR", "Profesor Ayudante. Diseño se contenidos, grabación de clases virtuales, diagramación de cartillas de prácticos y soluciones asociadas, dictado de clases de consulta",
   "Bioestadística I (Area I)","2017 - 2020", "Dr. Ciencias Veterinarias (plan 1998). Facultad de Veterinaria, UdelaR", "Dictado de clases teóricas y prácticas, administración de plataforma Moodle (EVA), elaboración de ejercicios para evaluaciones semanales, parciales y exámenes",
@@ -167,7 +170,8 @@ tribble(
 ```{r}
 tribble(
   ~ Titulo, ~ Fecha, ~ Carrera, ~ Rol, 
-  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bach. Diego Gérez y María Fernanda Paiva)", "03/2022 - 11/2022"," Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
+  "Variación Circadiana de los  Sonidos Abdominales y la Frecuencia Cardiaca en Equinos Semiestabulados", "03/2023 - Actual", "Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dr. Dietrich Pizzigatti, Co-Orientadores Dr. Fernando Fumagalli y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico",
+  "Evaluación de la capacidad histaminogénica de Lacha (Brevoortia aurea)(Bach. Diego Gérez y María Fernanda Paiva)", "03/2022 - 11/2022","Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dr. Santiago Díaz, Co-Orientadores Dr. José Pedro Dragonetti y Msc. Ignacio Alcántara., Rol: Asesoramiento en análisis estadístico", 
   "Uso de Amantadina en la terapia antáglica de caninos con dolor crónico (Bach. Henry Aguiar y Miguel Panza)", "08/2019 - 11/2020", "Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dra. Nadia Crosignani, Co-Orientador: Msc. Ignacio Alcántara, Rol: Asesoramiento en análisis estadístico",
  "Consumo de pescado en comunidades de pescadores artesanales del tramo bajo del Río Uruguay (Bach. Marcela Paíno)", "11/2017 - 09/2018","Doctor en Ciencias Veterinarias (plan 1998)", "Orientador: Dra. Cristina Friss De Kereki, Co-Orientadores: Msc. Ignacio Alcántara, Lic. Miguel Angel Bellagamba. Rol: Asesoramiento en análisis estadístico") %>% 
   detailed_entries(what = Titulo, when = Fecha,  where = Rol, with = Carrera)
@@ -219,6 +223,7 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ jornadas, ~ modalidad,
+"¿Afirmaciones extraordinarias exigen evidencia extraordinaria?; Reproducibilidad y datos abiertos en calidad de agua","Alcántara I., Somma A., García-Rodríguez F.", "10/2023", "Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo (Latin R) [https://latin-r.com/]", "Charla Plenaria",
 "Registros de Moodle para el seguimiento de la actividad estudiantil y diseño de estrategias educativas", "Alcántara I., Bobadilla P., Cabral P., Borlido C., Passarini J., Rosenstock N","7-9/10/2020", "Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo (Latin R) [https://latin-r.com/]", "charla relámpago", 
 "Niveles de riesgo de exposición a floraciones de cianobacterias en el Río Uruguay: forzantes ambientales y modelos de predicción","Alcántara I., Renom M., Piccini C., Kruk C.", "21/3/2019", "X Jornadas de Geociencias PEDECIBA", "Póster",
 "Modelos de predicción de floraciones de Cianobacterias en el Río Uruguay: clasificación con datos des-balanceados", "Alcántara I., Piccini C., Renom., Kruk C.", "9-10/3/2018","IX Jornadas de Geocienias PEDECIBA", "Póster",
@@ -313,6 +318,7 @@ tribble(
 ```{r}
 tribble(
   ~ cargo, ~ year, ~ contexto,
+  "Miembro organizador del Primer Simposio de Biología Computacional y Bioinformática", "11/20230", "Organizado por los integrantes del ISCB Regional Student Group - Uruguay",
 "Miembro del comité organizador de las IX Jornadas de Geociencias. “Aportes científicos y de gestión académica al Área de Geociencias”", "9-10/3/2018", "Centro Universitario Regional del Este – CURE. Universidad de la República",
 "Coordinador de la mesa de “Ecología microbiana”", "9-10/10/2014", "I Encuentro de jóvenes Microbiólogos, Sociedad Uruguaya de Microbiología, Uruguay",
 "Colaborador en el XV Congreso Latinoamericano de Ciencias del MAR" , "27-31/10/2013", "(XV COLACMAR), Uruguay"
@@ -326,6 +332,7 @@ tribble(
 
 tribble(
   ~ actividad, ~ institucion, ~ anio, ~ contexto,
+  "Charla en Mesa redonda \"Conflictos de Interes en la producción de conocimiento científico: gronegocios, agrotóxicos y redes de experticia\" ", "Catedra UNESCO - UDELAR", "12/2023", "Titulo de la Charla: Reproducibilidad y Datos Abiertos en Calidad de Agua",  
   "Nota en prensa: \" La contundente respuesta de 53 investigadores a un artículo que afirma que no hay relación entre la
 agricultura y las cianobacterias \" ", "Medio: La Diaria", "2021", "link: https://ladiaria.com.uy/ciencia/articulo/2021/12/la-contundente-respuesta-de-53-investigadores-a-un-paper-que-afirma-que-no-hay-relacion-entre-la-agricultura-y-las-cianobacterias/. Publicado el: 04/12/2021",
   "Miembro organizador de Taller de trabajo interinstitucional perteneciente al proyecto \"Análisis estadístico de variables atmosféricas e hidrográficas para la predicción de floraciones de Cianobacterias en el Río Uruguay y costa de Montevideo\" ",
@@ -339,6 +346,19 @@ agricultura y las cianobacterias \" ", "Medio: La Diaria", "2021", "link: https:
  ) %>% 
 detailed_entries(what = actividad , when = anio, where = institucion, why = contexto)
 ```
+
+## Asociaciones científicas a las que pertenezco
+
+```{r}
+
+tribble(
+  ~ asociacion, ~ lugar, ~ anio, ~ rol,
+"Student Regional Group - International Society of Computational Biology (RSG - Uruguay)", "Uruguay", "Creado en 2023", "Miembro fundador / Integrnte de Ccomisión seminarios"
+  ) %>% 
+detailed_entries(what = asociacion , when = anio, where = lugar, why = rol)
+
+```
+
 
 # Tribunales y Comisiones Asesoras
 
@@ -360,7 +380,8 @@ detailed_entries(what = programa , when = anio, where = institucion, why = rol)
 
 tribble(
   ~ actividad, ~ institucion, ~ anio, ~ contexto,
-"Delegado representante (alterno) de la Facultad de Veterinaria", "Grupo de Trabajo MGAP sobre \"Farmacovigilancia, Inocuidad y Residuos\" ", "2022", "Designado por Decano de Facultad de Veterinaria" 
+"Integrante por el orden Docente de la Asamblea del claustro de Facultad", "Facultad de Veterinaria", "2024", "Miembro suplente. Acceso mediante elecciones universitarias", 
+"Delegado representante (alterno) de la Facultad de Veterinaria", "Grupo de Trabajo MGAP sobre \"Farmacovigilancia, Inocuidad y Residuos\" ", "2022 - Actualidad", "Designado por Decanato de Facultad de Veterinaria" 
   ) %>% 
 detailed_entries(what = actividad , when = anio, where = institucion, why = contexto)
 
