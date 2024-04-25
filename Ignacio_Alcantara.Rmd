@@ -43,6 +43,7 @@ tribble(
 ```{r}
 tribble(
   ~ Nombre, ~ Año, ~ Docente , ~InstitucionyLugar,  ~ KeyWords, 
+  "Insights Lab Research Camp", "2024", "Magnus Fontes (Institut Roche), Marion Psomiades (Institut Roche)", "Institut Roche", "Data Science | Bioinformática | Diagnostico | Cancer", 
   "Second School on Data Science and Machine Learning","2023","Raphael Cobe (NCC-UNESP/AI2, Brazil), Sergio F. Novaes (UNESP/AI2, Brazil), Thiago Tomei (NCC-UNESP/AI2, Brazil)", "NCC-UNESP, São Paulo, Brazil"," Machine Learning | Neural Networks | Generative Models | Natural Language Processing",
   "Monitoring outbreaks for disease surveillance in a data science context", "2023", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 N° 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
   "Big Data and digital tools applied to livestock production", "2023", "Dr. Guilherme Rosa (Department of Animal & Dairy Sciences and Department of Biostatistics & Medical Informatics, University of Wisconsin-Madison), Dr. Joao Dorea (Department of Animal & Dairy Sciences and Department of Biological Systems Engineering, University of Wisconsin-Madison). Dr. Daniel Gianola (INIA Las Brujas)","Instituto Nacional de Investigación Agropecuaria e Instituto Pasteur de Montevideo, Montevideo, Uruguay", "Big Data | Agricultura de Precision | Data science | Estadística de grandes datos",
@@ -158,6 +159,8 @@ tribble(
 ```{r}
 tribble(
   ~ Curso, ~ Fecha, ~ Carrera, ~ Rol, 
+  "Proyecto Integrador", "08/2023", "Ingenieria Agroambiental - Universidad Teconológica (UTEC)", "Docente invitado clase: \"Introducción a la pregunta científica en el marco del Ciclo de Indagación\" ",
+  "Gestion ambiental", "10/2023", "Ingenieria Agroambiental - Universidad Teconológica (UTEC)", "Docente invitado con dos clases: \" Diseño de muestreo \" y \"Introducción al análisis de datos\" ",
   "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", " Elaboración de cuestionarios para Moodle usando el software R\". Rosenstock N., Alcántara I., Bobadilla P.",
   "Taller Internacional de Formación Docente: Uso de Tecnologías en la Educación Veterinaria. (2021)", "2021", "Programa MARCA - Secretaria General Iberoamericana - MERCOSUR Educativo", "Indicadores basados en registros de Moodle para el seguimiento de la actividad estudiantil\". Bobadilla P., Alcántara I., Rosenstock N.",
   "Taller: Ecología en el patio de la escuela", "2015","Liceo N°1 de Santa Lucía. A.N.E.P", "Armado y dictado del taller para los grupos 1 y 2 de 5to biológico. Co Responsable junto con MSc. Emanuel Machín") %>% 
