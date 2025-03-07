@@ -1,11 +1,12 @@
 ---
 name: Ignacio
 surname: Alcántara
-position: "Assitant Professor"
+position: "Associate Professor"
 address: "Biostatistics Unit, Public Health Department, Faculty of Veterinary, Universidad de la República"
 email: "nalcann@gmail.com"
 github: NAlcan
 linkedin: "www.linkedin.com/in/ialcantara16"
+orcid: "https://orcid.org/0000-0003-2387-8644"
 date: "`r format(Sys.time(), '%b %Y')`"
 output: vitae::hyndman
 ---
@@ -45,8 +46,9 @@ tribble(
 
 ```{r}
 tribble(
-  ~ Name, ~ Year, ~ Instructor, ~ InstitutionAndLocation, ~ KeyWords, 
-  "Monitoring outbreaks for disease surveillance in a data science context", "20230", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 No. 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
+  ~ Name, ~ Year, ~ Instructor, ~ InstitutionAndLocation, ~ KeyWords,
+  "Second School on Data Science and Machine Learning", "2023", "Raphael Cobe, Sergio F. Novaes, Thiago Tomei (NCC-UNESP/AI2, Brazil)", "NCC-UNESP - ICTP - SAIFR, São Paulo, Brazil", "Machine Learning | Neural Networks | Generative Models| Natural Language Processing",
+  "Monitoring outbreaks for disease surveillance in a data science context", "2023", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 No. 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
   "Big Data and digital tools applied to livestock production", "2023", "Dr. Guilherme Rosa (University of Wisconsin-Madison), Dr. Joao Dorea (University of Wisconsin-Madison), Dr. Daniel Gianola (INIA - Uruguay)", "National agricultural research institute (INIA - Uruguay)", "Machine Learning | Precision livestock | High dimensional data",
   "Analytical Statistics: logistic regression and introduction to mixed models", "2022", "Dr. Natalia Cernicchiaro (Kansas State University, USA)", "Graduate School Faculty of Dentistry, UdelaR - Montevideo, Uruguay", "Logistic Regression | Epidemiology | GLMM Models",
   "Time Series Analysis Tools", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA, and SARIMA | Parameter Estimation | Spectral Analysis",
@@ -81,7 +83,8 @@ tribble(
 
 ```{r}
 tribble(
-  ~ Program, ~ Year, ~ Institution, ~ Work, 
+  ~ Program, ~ Year, ~ Institution, ~ Work,
+  "Scholarships to support the completion of postgraduate studies at Udelar, Doctorate", "03/2025 - 03/2026", "CAP, UdelaR","Pharmacoeconomics and Pharmacoepidemiology of Acaricide Consumption Habits in Agricultural Systems in Uruguay",
   "Scholarships for Faculty Support for Postgraduate Studies at UdelaR, Doctorate", "03/2022 - 03/2025", "CAP, UdelaR","Pharmacoeconomics and Pharmacoepidemiology of Acaricide Consumption Habits in Agricultural Systems in Uruguay",
   "Master's Scholarships - National Postgraduate Programs",  "05/2016 - 05/2018", "ANII", "Prediction of Cyanobacterial Blooms Based on Meteorological, Hydrological, and Environmental Variables for Early Warning Systems",
   "UC Winter School Doctoral Program - Ecology Area (Full Scholarship)", "08/2016" , "Pontifical Catholic University of Chile (Chile)", "Global Change Ecology Workshop",
@@ -101,6 +104,7 @@ tribble(
 ```{r}
 tribble(
   ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
+  "Assessing trends in ectoparasiticidal drugs used to control ticks and flies in farm animals: A four-year analysis reveal differences between epidemiological zones at country level in Uruguay", "Alcántara I., Suárez G.", "2025", "Preventive Veterinary Medicine", "https://doi.org/10.1016/j.prevetmed.2024.106412",
   "A reply to `Relevant factors in the eutrophication of the Uruguay River and the Río Negro`", "Alcántara I., Somma A., Chalar G., Fabre A.,[...], García-Rodriguez F.","2022","Science of Total Environment","10.1016/j.scitotenv.2021.151854",
   "Improved biovolume estimation of Microcystis aeruginosa colonies: A statistical approach", "Alcántara I., Piccini C., Segura A. M., Deus S., González C., Martínez de la Escalera G., Kruk, C","2018","Journal of microbiological methods"," https://doi.org/10.1016/j.mimet.2018.05.021") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
 ```
