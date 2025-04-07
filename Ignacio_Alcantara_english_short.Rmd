@@ -1,0 +1,100 @@
+---
+name: Ignacio
+surname: Alcántara
+position: "Associate Professor"
+address: "Biostatistics Unit, Public Health Department, Faculty of Veterinary, Universidad de la República"
+email: "nalcann@gmail.com"
+github: NAlcan
+linkedin: "www.linkedin.com/in/ialcantara16"
+date: "`r format(Sys.time(), '%b %Y')`"
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+
+```
+
+# Interests
+
+  + Data Sciences 
+  + Bioestatistics and spatial analysis
+  + Pharmacoepidemiology
+  + Environmental sciences
+  + Statistics for Process Control
+
+# Education
+
+## Degrees
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Location, ~ Thesis, ~ Advisor,
+  "PhD in Animal Production", "2021 (in progress)", "Faculty of Veterinary Medicine, UdelaR", "Montevideo, Uruguay", "Pharmacoeconomics and pharmacoepidemiology of acaricide consumption habits in Uruguayan agricultural systems", "Advisor: Dr. Gonzalo Suárez",
+  "Master's in Geosciences", "2015 - 2019", "Faculty of Sciences - PEDECIBA, UdelaR", "Montevideo, Uruguay", "Risk levels of exposure to Cyanobacterial blooms in the Uruguay River; environmental forcings and prediction models",
+  "Advisors: Dr. Carla Kruk, Dr. Claudia Piccini, Dr. Madeleine Renom",
+  "Bachelor's in Biological Sciences (Ecology option)", "2009 - 2015", "Faculty of Sciences, UdelaR", "Montevideo, Uruguay", "Effects of environmental variability on the presence, community structure, and blooms of Microcystis aeruginosa Complex", "Advisors: Dr. Carla Kruk, Dr. Claudia Piccini"
+  ) %>% 
+  detailed_entries( Degree, Year, Institution, Location, c(glue::glue("Thesis title: {Thesis}"), Advisor) )
+
+
+```
+
+## Latest relevant courses
+
+```{r}
+tribble(
+  ~ Name, ~ Year, ~ Instructor, ~ InstitutionAndLocation, ~ KeyWords,
+  "Second School on Data Science and Machine Learning", "2023", "Raphael Cobe, Sergio F. Novaes, Thiago Tomei (NCC-UNESP/AI2, Brazil)", "NCC-UNESP - ICTP - SAIFR, São Paulo, Brazil", "Machine Learning | Neural Networks | Generative Models| Natural Language Processing",
+  "Monitoring outbreaks for disease surveillance in a data science context", "2023", "Tomislav Hengl (Open GeoHub, Netherlands), Elena Arsevska (CIRAD, France)", "MOOD project European Union's Horizon 2020 No. 874850", "One Health | Geospatial | Epidemiology | Machine Learning",
+  "Big Data and digital tools applied to livestock production", "2023", "Dr. Guilherme Rosa (University of Wisconsin-Madison), Dr. Joao Dorea (University of Wisconsin-Madison), Dr. Daniel Gianola (INIA - Uruguay)", "National agricultural research institute (INIA - Uruguay)", "Machine Learning | Precision livestock | High dimensional data",
+  "Analytical Statistics: logistic regression and introduction to mixed models", "2022", "Dr. Natalia Cernicchiaro (Kansas State University, USA)", "Graduate School Faculty of Dentistry, UdelaR - Montevideo, Uruguay", "Logistic Regression | Epidemiology | GLMM Models",
+  "Time Series Analysis Tools", "2020","Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","ARMA, ARIMA, and SARIMA | Parameter Estimation | Spectral Analysis",
+  "The CODATA-RDA Research Data Science Summer School", "2020","Dr. Robert Quick (Indiana University, USA), Dr. Hugh Shanahan (Royal Holloway University, United Kingdom)" ,"ICTP (Trieste, Italy) - Virtual Edition", "Data Science | Reproducibility | Data Governance", 
+  "Extreme Data Statistics", "2019", "Dr. Gonzalo Perera","CURE, UdelaR - Rocha, Uruguay","Extreme Distributions | POT",
+"Spatial Statistical Analysis in R", "2019", "Dr. Paul Harris (Rothamsted Research, United Kingdom), Dr. Alexis Comber (Leeds University, United Kingdom)", "Faculty of Agronomy, UdelaR - Montevideo, Uruguay", "Spatial Data | Multi-scale Geographical Regressions | Statistical Maps",
+ "The CODATA-RDA Research Data Science", "2018", "Dr. Marcela Alfaro Córdoba (University of Costa Rica, Costa Rica), Dr. Robert Quick (Indiana University, USA)", "ICTP- SAIFR - São Paulo, Brazil", "Data Science | Open Source Software | Statistics and Visualization | Data Reproducibility",
+ "Summer School in Advanced Statistical Methods in Ecology and Evolution", "2017", "Dr. Pablo Inchausti", "CURE, UdelaR - Maldonado, Uruguay", "R Language | GLMM | GAM",
+)  %>% 
+  detailed_entries(Name, Year, InstitutionAndLocation, glue::glue("Coordinators: {Instructor}"), glue::glue("Keywords: {KeyWords}") )
+
+
+```
+
+# Creation of Knowledge
+
+## Academic Articles Published in Peer-Reviewed Journals
+### First Author 
+
+```{r}
+tribble(
+  ~ title, ~ author, ~ year, ~ journaltitle, ~ DOI,
+  "Assessing trends in ectoparasiticidal drugs used to control ticks and flies in farm animals: A four-year analysis reveal differences between epidemiological zones at country level in Uruguay", "Alcántara I., Suárez G.", "2025", "Preventive Veterinary Medicine", "https://doi.org/10.1016/j.prevetmed.2024.106412",
+  "A reply to `Relevant factors in the eutrophication of the Uruguay River and the Río Negro`", "Alcántara I., Somma A., Chalar G., Fabre A.,[...], García-Rodriguez F.","2022","Science of Total Environment","10.1016/j.scitotenv.2021.151854",
+  "Improved biovolume estimation of Microcystis aeruginosa colonies: A statistical approach", "Alcántara I., Piccini C., Segura A. M., Deus S., González C., Martínez de la Escalera G., Kruk, C","2018","Journal of microbiological methods"," https://doi.org/10.1016/j.mimet.2018.05.021") %>% detailed_entries(what = title , when = year, with = journaltitle, where = author, why = DOI)
+```
+ 
+### Co - authoring
+ 
+```{r}
+tribble(
+  ~ Title, ~ Author, ~ Year, ~ Journal, ~ DOI,
+  "Relationship between strains of Holstein cows, feeding strategies and udder health","Morales-Piñeyrúa J.T., Bobadilla P., Alcántara I., De Torres E.","2023","Agrociencia","https://doi.org/10.31285/agro.27.1150 ",
+  "Caenorhabditis elegans as a valuable model for the study of anthelmintic pharmacodynamics and drug-drug interactions: The case of ivermectin and eprinomectin", "Suárez, G., Alcántara I., Salinas G.","2022","Front. Pharmacol.","10.3389/fphar.2022.984905",
+  "Benefits of Silvopastoral Systems for Keeping Beef Cattle", "Huertas S.M., Bobadilla P., Alcántara I., Akkermans E., van Eerdenburg F.", "2021", "Animals","https://doi.org/10.3390/ani11040992", 
+  "El Índice de Actividad Individual de los estudiantes en EVA y sus rendimientos académicos: el caso de Bioestadística Veterinaria", "Bobadilla P., Alcántara I., Rosenstock N., Borlido C., Cabral P., Huertas S., Passarini J.", "2020", "Inter-Cambios. Dilemas y Transiciones de la Educación Superior","https://doi.org/10.29156/INTER.7.2.15",
+  "Floración excepcional de Cianobacterias tóxicas en la costa de Uruguay, verano 2019", "Kruk C., Martínez A., Martínez de la Escalera G., Trinchin R., Manta G., Segura A. M., Piccini C., Brena B., Fabiano G., Pírez M., Gabito L., Alcántara I., Yannicelli B", "2019", "Innotec", "https://doi.org/10.26461/18.06",
+  "Variabilidad y tendencia de la temperatura superficial de los grandes embalses del Río Negro", "Manta G., Alcántara I.","2018","Innotec", "https://doi.org/10.26461/16.07",
+  "A multilevel trait-based approach to the ecological performance of Microcystis aeruginosa complex from headwaters to the ocean","Kruk C., Segura A. M., Nogueira L., Alcántara I., Calliari D., Martínez de la Escalera G., Carballo C., Cabrera C., Sarthou F., Scavone P., Piccini, C.","2017","Harmful Algae", "https://doi.org/10.1016/j.hal.2017.10.004",
+  "Increased sampled volume improves Microcystis aeruginosa complex (MAC) colonies detection and prediction using Random Forests", "Segura A. M., Piccini C., Nogueira L., Alcántara I., Calliari D., Kruk C", "2017", "Ecological Indicators", "http://dx.doi.org/10.1016/j.ecolind.2017.04.047",
+  "Dynamics of toxic genotypes of Microcystis aeruginosa complex (MAC) through a wide freshwater to marine environmental gradient", "Martínez de la Escalera G., Kruk C., Segura A. M., Nogueira L., Alcántara I., Piccini C.", "2017", "Harmful Algae", "http://dx.doi.org/10.1016/j.hal.2016.11.012",
+  "Herramientas para el monitoreo y sistema de alerta de floraciones de cianobacterias nocivas: Río Uruguay y Río de la Plata", "Kruk C., Segura A., Nogueira L., Carballo C., Martínez de la Escalera G., Calliari D., Ferrari G., Simoens M., Cea J., Alcántara I., Vico P., Míguez D., Piccini C.", "2015", "Innotec", "<http://ojs.latu.org.uy/index.php/INNOTEC/article/view/311>"
+) %>% detailed_entries(what = Title , when = Year, with = Journal, where = Author, why = DOI)
+
+```
+ 
+
+# Author ORCID
+
+* https://orcid.org/0000-0003-2387-8644
